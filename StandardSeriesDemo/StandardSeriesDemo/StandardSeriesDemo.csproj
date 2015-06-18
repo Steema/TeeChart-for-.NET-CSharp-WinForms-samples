@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81F2455D-2416-4201-A08B-FF3F0AE3B3B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StandardSeriesDemo</RootNamespace>
+    <AssemblyName>StandardSeriesDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StandardSeries\Areas\VegetationGrowth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\Areas\VegetationGrowth.Designer.cs">
+      <DependentUpon>VegetationGrowth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSeries\Bars\SalesFigures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\Bars\SalesFigures.Designer.cs">
+      <DependentUpon>SalesFigures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSeries\Bars\ServerStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\Bars\ServerStatus.Designer.cs">
+      <DependentUpon>ServerStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSeries\Bars\StackedBars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\Bars\StackedBars.Designer.cs">
+      <DependentUpon>StackedBars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSeries\Bubbles\PopularLanguages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\Bubbles\PopularLanguages.Designer.cs">
+      <DependentUpon>PopularLanguages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSeries\Gantt\ProjectPlanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\Gantt\ProjectPlanner.Designer.cs">
+      <DependentUpon>ProjectPlanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSeries\Lines\StockMonitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\Lines\StockMonitoring.Designer.cs">
+      <DependentUpon>StockMonitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSeries\Lines\WebAnalytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\Lines\WebAnalytics.Designer.cs">
+      <DependentUpon>WebAnalytics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSeries\Miscellaneous\ScrollerChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\Miscellaneous\ScrollerChart.Designer.cs">
+      <DependentUpon>ScrollerChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSeries\Miscellaneous\StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\Miscellaneous\StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSeries\PieAndDonut\DonutChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\PieAndDonut\DonutChart.Designer.cs">
+      <DependentUpon>DonutChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSeries\PieAndDonut\MultiDonut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\PieAndDonut\MultiDonut.Designer.cs">
+      <DependentUpon>MultiDonut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSeries\PieAndDonut\MultiPies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\PieAndDonut\MultiPies.Designer.cs">
+      <DependentUpon>MultiPies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSeries\PieAndDonut\PiesSalesFigures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\PieAndDonut\PiesSalesFigures.Designer.cs">
+      <DependentUpon>PiesSalesFigures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardSeries\Points\ProductShipments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandardSeries\Points\ProductShipments.Designer.cs">
+      <DependentUpon>ProductShipments.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StandardSeries\Areas\VegetationGrowth.resx">
+      <DependentUpon>VegetationGrowth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSeries\Bars\SalesFigures.resx">
+      <DependentUpon>SalesFigures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSeries\Bars\ServerStatus.resx">
+      <DependentUpon>ServerStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSeries\Bars\StackedBars.resx">
+      <DependentUpon>StackedBars.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSeries\Bubbles\PopularLanguages.resx">
+      <DependentUpon>PopularLanguages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSeries\Gantt\ProjectPlanner.resx">
+      <DependentUpon>ProjectPlanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSeries\Lines\StockMonitoring.resx">
+      <DependentUpon>StockMonitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSeries\Lines\WebAnalytics.resx">
+      <DependentUpon>WebAnalytics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSeries\Miscellaneous\ScrollerChart.resx">
+      <DependentUpon>ScrollerChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSeries\Miscellaneous\StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSeries\PieAndDonut\DonutChart.resx">
+      <DependentUpon>DonutChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSeries\PieAndDonut\MultiDonut.resx">
+      <DependentUpon>MultiDonut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSeries\PieAndDonut\MultiPies.resx">
+      <DependentUpon>MultiPies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSeries\PieAndDonut\PiesSalesFigures.resx">
+      <DependentUpon>PiesSalesFigures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StandardSeries\Points\ProductShipments.resx">
+      <DependentUpon>ProductShipments.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\down.png" />
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TeeChartWhite300x70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TeeChartWhite190x44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Sources\TeeChart\TeeChart45.csproj">
+      <Project>{1fa292fe-ba95-467b-976b-0eadcbf20528}</Project>
+      <Name>TeeChart45</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
