@@ -1,0 +1,404 @@
+Kabul;69,20;34,58
+Algiers;3,5;36,76
+Buenos Aires;-58,48;-34,58
+Cordoba;-64,25;-31,36
+Tucuman;-65,16;-26,83
+Adelaide;138,58;-34,93
+Alice Springs;133,88;-23,80
+Brisbane;153,3;-27,46
+Darwin;130,85;-12,46
+Melbourne;144,96;-37,81
+Perth;115,85;-31,95
+Sydney;151,20;-33,86
+Vienna;16,36;48,25
+Lajes (Terceira);-27,8;38,75
+Nassau;-77,35;25,8
+Chittagong;91,83;22,35
+Brussels;4,35;50,80
+Kindley AFB;-64,68;33,36
+La Paz;-68,15;-16,50
+Belem;-48,48;-1,45
+Belo Horizonte;-43,95;-19,93
+Brasilia;-47,91;-15,86
+Curitiba;-49,28;-25,41
+Fortaleza;-38,55;-3,76
+Porto Alegre;-51,21;-30,3
+Recife;-34,88;-8,6
+Rio De Janeiro;-43,20;-22,91
+Salvador;-38,50;-13,0
+Sao Paulo;-46,63;-23,55
+Belize;-88,18;17,51
+Sofia;23,33;42,70
+Mandalay;96,10;21,98
+Rangoon;96,15;16,78
+Phnom Penh;104,85;11,55
+Punta Arenas;-70,90;-53,16
+Santiago;-70,70;-33,45
+Valparaiso;-71,63;-33,1
+Chongquing;106,55;29,55
+Shanghai;121,43;31,20
+Baranquilla;-74,80;10,98
+Bogota;-74,8;4,60
+Cali;-76,50;3,41
+Medellin;-75,60;6,21
+Brazzaville;15,25;-4,25
+Guantanamo Bay;-75,15;19,90
+Havana;-82,35;23,13
+Prague;14,41;50,8
+Copenhagen;12,55;55,68
+Santo Domingo;-69,90;18,48
+Guayaquil;-79,88;-2,0
+Quito;-78,53;-0,21
+Cairo;31,33;29,86
+San Salvador;-89,21;13,70
+Addis Ababa;38,75;9,3
+Asmara;38,91;15,28
+Helsinki;24,95;60,16
+Lyon;4,78;45,70
+Marseilles;5,38;43,30
+Nantes;-1,56;47,25
+Nice;7,26;43,70
+Paris;2,48;48,81
+Strasbourg;7,76;48,58
+Cayenne;-52,45;4,93
+Berlin (West);13,30;52,45
+Hamburg;9,96;53,55
+Hannover;9,66;52,40
+Mannheim;8,46;49,56
+Munich;11,56;48,15
+Accra;-0,20;5,55
+Gibraltar;-5,36;36,15
+Athens;23,71;37,96
+Thessaloniki;22,95;40,61
+Narsarssuaq;-45,41;61,18
+Guatemala City;-90,51;14,61
+Georgetown;-58,20;6,83
+Port Au Prince;-72,33;18,55
+Tegucigalpa;-87,21;14,10
+Hong Kong;114,16;22,30
+Budapest;19,3;47,51
+Reykjavik;21,93;64,13
+Ahmenabad;72,58;23,3
+Bangalore;77,61;12,95
+Bombay;72,81;18,90
+Calcutta;88,33;22,53
+Madras;80,25;13,6
+Nagpur;79,11;21,15
+New Delhi;77,20;28,58
+Djakarta;106,83;-6,18
+Kupang;123,56;-10,16
+Makassar;119,46;-5,13
+Medan;98,68;3,58
+Palembang;104,76;-3,0
+Surabaya;112,71;-7,21
+Abadan;48,26;30,35
+Meshed;59,60;36,28
+Tehran;51,41;35,68
+Baghdad;44,40;33,33
+Mosul;43,15;36,31
+Dublin;-6,35;53,36
+Shannon;-8,91;52,68
+Manokwari;134,8;-0,86
+Jerusalem;35,21;31,78
+Tel Aviv;34,78;32,10
+Milan;9,28;45,45
+Naples;14,30;40,88
+Rome;12,60;41,80
+Abidjan;-4,1;5,31
+Fukuoka;130,45;33,58
+Sapporo;141,35;43,6
+Tokyo;139,76;35,68
+Amman;35,95;31,95
+Nairobi;36,80;-1,26
+Pyongyang;125,68;39,3
+Seoul;126,96;37,56
+Beirut;35,46;33,90
+Monrovia;-10,80;6,30
+Benghazi;20,6;32,10
+Tananarive;47,55;-18,91
+Kuala Lumpur;101,70;3,11
+Penang;100,31;5,41
+Fort De France;-61,8;14,61
+Guadalajara;-103,33;20,68
+Merida;-89,63;20,96
+Mexico City;-99,20;19,40
+Monterrey;-100,30;25,66
+Vera Cruz;-96,13;19,20
+Casablanca;-7,65;33,58
+Katmandu;85,20;27,70
+Amsterdam;4,91;52,38
+Auckland;174,76;-36,85
+Christchurch;172,61;-43,53
+Wellington;174,76;-41,28
+Managua;-86,25;12,16
+Lagos;3,40;6,45
+Bergen;5,31;60,40
+Oslo;10,73;59,93
+Karachi;66,98;24,80
+Lahore;74,33;31,58
+Peshwar;71,58;34,1
+Panama City;-79,55;8,96
+Port Moresby;147,15;-9,48
+Ascuncion;-57,50;-25,28
+Lima;-77,5;-12,8
+Manila;120,98;14,58
+Krakow;19,95;50,6
+Warsaw;21,3;52,21
+Lisbon;-9,13;38,71
+San Juan;-66,11;18,48
+Bucharest;26,10;44,41
+Alma Ata;76,88;43,23
+Archangel;40,53;64,55
+Kaliningrad;20,50;54,71
+Krasnoyarsk;92,95;56,1
+Kiev;30,50;50,45
+Kharkov;36,23;50,0
+Kuibyshev;50,10;53,18
+Leningrad;30,26;59,93
+Minsk;27,55;53,90
+Moscow;37,66;55,76
+Odessa;30,73;46,48
+Petropavlovsk;158,70;52,88
+Rostov on Don;39,71;47,21
+Sverdlovsk;60,63;56,81
+Tashkent;69,30;41,33
+Tbilisi;44,80;41,71
+Vladivostok;131,91;43,11
+Volgograd;44,51;48,70
+Dhahran;50,15;26,28
+Jedda;39,16;21,46
+Riyadh;46,70;24,65
+Dakar;-17,48;14,70
+Singapore;103,83;1,30
+Mogadiscio;49,31;2,3
+Cape Town;18,48;-33,93
+Johannesburg;28,5;-26,18
+Pretoria;28,23;-25,75
+Aden;45,3;12,83
+Barcelona;2,15;41,40
+Girona;2,77;42,17
+Riudellots de la Selva;2,77;42,01
+Banyoles;2,67;42,14
+Garrigoles;3,06;42,33
+Madrid;-3,68;40,41
+Valencia;-0,38;39,46
+Colombo;79,86;6,90
+Khartoum;32,55;15,61
+Paramaribo;-55,15;5,81
+Stockholm;18,6;59,35
+Zurich;8,55;47,38
+Damascus;36,33;33,50
+Tainan;120,20;22,95
+Taipei;121,51;25,3
+Dar es Salaam;39,30;-6,83
+Bangkok;100,50;13,73
+Port of Spain;-61,51;10,66
+Tunis;10,20;36,78
+Adana;35,30;36,98
+Ankara;32,88;39,95
+Istanbul;28,83;40,96
+Izmir;27,16;38,43
+Belfast;-5,91;54,60
+Birmingham;-1,93;52,48
+Cardiff;-3,16;51,46
+Edinburgh;-3,18;55,91
+Glasgow;-4,28;55,86
+London;-0,0;51,48
+Montevideo;-56,21;-34,85
+Caracas;-66,93;10,50
+Maracaibo;-71,60;10,65
+Da Nang;108,21;16,6
+Hanoi;105,86;21,3
+Saigon;106,70;10,78
+Belgrade;20,46;44,80
+Kinshasa (Leopoldville);15,30;-4,33
+Kisangani (Stanleyville);15,23;-0,43
+Calgary;-114,1;51,10
+Edmonton;-113,51;53,56
+Grande Prairie;-118,88;55,18
+Jasper;-118,6;52,88
+Lethbridge;-112,80;49,63
+McMurray;-111,21;56,65
+Medicine Hat;-110,71;50,1
+Red Deer;-113,90;52,18
+Dawson Creek;-120,18;55,73
+Fort Nelson;-122,58;58,83
+Kamloops Co;-120,41;50,71
+Nanaimo;-123,96;49,18
+New Westminster;-122,90;49,21
+Penticton;-119,60;49,46
+Prince George;-122,68;53,88
+Prince Rupert Co;-130,38;54,28
+Trail;-117,73;49,13
+Vancouver;-123,16;49,18
+Victoria Co;-123,31;48,41
+Brandon;-99,98;49,86
+Churchill;-94,6;58,75
+Dauphin;-100,5;51,10
+Flin Flon;-101,85;54,76
+Portage La Prairie;-98,26;49,90
+The Pas;-101,10;53,96
+Winnipeg;-97,23;49,90
+Campbellton Co;-66,66;48,0
+Chatham;-65,45;47,1
+Edmundston Co;-68,33;47,36
+Fredericton;-66,53;45,86
+Moncton;-64,68;46,11
+Saint John;-65,88;45,31
+Corner Brook;-57,95;48,96
+Gander;-54,56;48,95
+Goose Bay;-60,41;53,31
+St Johns;-52,75;47,61
+Stephenville;-58,55;48,53
+Fort Smith;-111,96;60,1
+Frobisher;-68,55;63,75
+Inuvik;-133,48;68,30
+Resolute;-94,98;74,71
+Yellowknife;-114,45;62,46
+Amherst;-64,21;45,81
+Halifax;-63,56;44,65
+Kentville;-64,60;45,5
+New Glasgow;-62,61;45,61
+Sydney;-60,5;46,16
+Truro Co;-63,26;45,36
+Yarmouth;-66,8;43,83
+Belleville;-77,40;44,15
+Chatham;-82,20;42,40
+Cornwall;-74,75;45,1
+Hamilton;-79,90;43,26
+Kapuskasing;-82,46;49,41
+Kenora;-94,36;49,80
+Kingston;-76,50;44,26
+Kitchener;-80,50;43,43
+London;-81,15;43,3
+North Bay;-79,41;46,36
+Oshawa;-78,86;43,90
+Ottawa;-75,66;45,31
+Owen Sound;-80,91;44,56
+Peterborough;-78,31;44,28
+St Catharines;-79,23;43,18
+Sarnia;-82,36;42,96
+Sault Ste Marie;-84,50;46,53
+Sudbury;-80,80;46,61
+Thunder Bay;-89,31;48,36
+Timmins;-81,36;48,56
+Toronto;-79,63;43,68
+Windsor;-82,96;42,26
+Charlottetown;-63,13;46,28
+Summerside;-63,83;46,43
+Bagotville;-71,0;48,33
+Chicoutimi;-71,8;48,41
+Drummondville;-72,48;45,88
+Granby;-72,70;45,38
+Hull;-75,73;45,43
+Megantic;-70,86;45,58
+Montreal;-73,75;45,46
+Quebec;-71,38;46,80
+Rimouski;-68,53;48,45
+St Jean;-73,26;45,30
+St Jerome;-74,1;45,80
+Sept. Iles;-66,26;50,21
+Shawinigan;-72,71;46,56
+Sherbrooke Co;-71,90;45,40
+Thetford Mines;-71,31;46,6
+Trois Rivieres;-72,58;46,35
+Val Dor;-77,78;48,5
+Valleyfield;-74,10;45,26
+Estevan;-103,0;49,6
+Moose Jaw;-105,55;50,33
+North Battleford;-108,25;52,76
+Prince Albert;-105,68;53,21
+Regina;-104,66;50,43
+Saskatoon;-106,68;52,16
+Swift Current;-107,68;50,28
+Yorkton;-102,46;51,26
+Whitehorse;-135,6;60,71
+Birmingham;-86,75;33,56
+Fairbanks;-147,86;64,81
+Tucson;-110,93;32,11
+Hot Springs;-93,10;34,48
+Little Rock;-92,23;34,73
+El Cerrito;-115,66;32,81
+Fresno;-119,71;36,76
+Laguna Beach;-117,78;33,55
+Long Beach;-118,15;33,81
+Los Angeles;-118,40;33,93
+Monterey;-121,90;36,60
+Oakland;-122,31;37,81
+Ontario;-117,60;34,5
+Palmdale;-118,10;34,63
+Palm Springs;-116,53;33,81
+Pasadena;-118,15;34,15
+Richmond;-122,35;37,93
+Sacramento;-121,50;38,51
+San Diego;-117,16;32,73
+San Francisco;-122,38;37,61
+San Jose;-121,93;37,36
+San Louis Obispo;-120,71;35,33
+Santa Cruz;-122,1;36,98
+Santa Monica CIC;-118,48;34,1
+Colorado Springs;-104,71;38,81
+Denver;-104,86;39,75
+Washington, National;-77,3;38,85
+Daytona Beach;-81,5;29,18
+E Fort Lauderdale;-80,15;26,6
+Jacksonville;-81,70;30,50
+Key West;-81,75;24,55
+Miami;-80,26;25,80
+Orlando;-81,38;28,55
+Panama City, Tyndall AFB;-85,58;30,6
+Pensacola Co;-87,21;30,41
+Stanford;-81,28;28,76
+Tampa;-82,53;27,96
+Atlanta;-84,43;33,65
+Augusta;-81,96;33,36
+Honolulu;-157,91;21,33
+Chicago, OHare;-87,90;41,98
+Springfield;-89,66;39,83
+Indianapolis;-86,28;39,73
+Richmond;-84,83;39,76
+Wichita;-97,41;37,65
+Louisville;-85,73;38,18
+New Orleans;-90,25;29,98
+Augusta;-69,80;44,31
+Portland;-70,31;43,65
+Baltimore;-76,66;39,18
+Boston;-71,3;42,36
+Springfield;-72,53;42,20
+Detroit;-83,1;42,41
+Minneapolis/St. Paul;-93,21;44,88
+Virginia;-92,55;47,50
+Columbia;-92,36;38,96
+Kansas City;-94,58;39,11
+St. Louis;-90,38;38,75
+Springfield;-93,38;37,23
+Las Vegas;-115,16;36,8
+Reno;-119,78;39,50
+Albuquerque;-106,61;35,5
+Los Alamos;-106,31;35,86
+Santa Fe CO;-106,8;35,61
+Albany;-73,80;42,75
+Buffalo;-78,73;42,93
+Kingston;-74,0;41,93
+Niagara Falls;-79,95;43,10
+Syracuse;-76,11;43,11
+Raleigh/Durham;-78,78;35,86
+Fargo;-96,80;46,90
+Springfield;-83,83;39,83
+Oklahoma City;-97,60;35,40
+Tulsa;-95,90;36,20
+Portland;-122,60;45,60
+Philadelphia;-75,25;39,88
+Pittsburgh;-80,21;40,50
+Memphis;-90,0;35,5
+Nashville;-86,68;36,11
+Austin;-97,70;30,30
+Dallas;-96,85;32,85
+El Paso;-106,40;31,80
+Houston;-95,35;29,96
+Salt Lake City;-111,96;40,76
+Charlottesville;-78,51;38,3
+Richmond;-77,33;37,50
+Seattle-Tacoma;-122,30;47,45
+Milwaukee;-87,90;42,95
+Rock Springs;-109,0;41,60
