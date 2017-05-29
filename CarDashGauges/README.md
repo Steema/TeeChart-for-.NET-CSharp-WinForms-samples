@@ -1,6 +1,6 @@
 # TeeChart for .NET Gauge demo - Subaru BRZ acceleration simulation
 
-The example uses TeeChart's Circular and Numeric Gauges to simulate the acceleration of a 2013 Subaru BRZ car.
+The example uses TeeChart's Circular and Numeric Gauges to simulate the acceleration of a 2016 Subaru BRZ car.
 
 ![screenshot](https://github.com/Steema/TeeChart-for-.NET-CSharp-WinForms-samples/blob/master/CarDashGauges/images/teechart_net_subaru_brz.png "TeeChart for NET Gauges")
 
