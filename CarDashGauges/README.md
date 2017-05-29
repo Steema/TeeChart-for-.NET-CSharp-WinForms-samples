@@ -65,6 +65,9 @@ The rev limit for which to change gear has been defined at 7500rpm. The secsToCh
 The demo form contains a Timer that is activated to run the simulation.
 Control of the gears, speed, revs, distance and over-rev warning light are all controlled when the timer triggers.
 
+### Output
+Resulting output:<br>
+![screenshot](https://github.com/Steema/TeeChart-for-.NET-CSharp-WinForms-samples/blob/master/CarDashGauges/images/SubaruBRZanim.gif "TeeChart for NET Gauges, https://www.steema.com/product/net")
 
 
 
