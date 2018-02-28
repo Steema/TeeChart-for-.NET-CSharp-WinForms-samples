@@ -46,6 +46,8 @@ namespace LinkingCharts
 
       tChart1.Panel.Gradient.Visible = true;
 
+			dataGridView1.DataSource = bindingSource2;
+
       setHighestValueHistory();
       
       setComments(commentType.global);
@@ -259,7 +261,7 @@ namespace LinkingCharts
         refreshCountryYear(tChart3[0].Labels[valueIndex]);
 
 				//dataGridView1.Selected = this.dataGridView1[1, valueIndex];
-				//dataGridView1.Selected.Row = valueIndex;
+				dataGridView1.Selected.Row = valueIndex;
 			}
 		}
 
