@@ -47,10 +47,6 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="TeeChart, Version=4.1.2017.2146, Culture=neutral, PublicKeyToken=9c8126276c77bdb7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TeeChart.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ReportForm.cs">
@@ -110,7 +106,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\TCROOT\TeeBI_NET\Grid\WinForm\TeeGrid.WinForm.csproj">
+      <Project>{3e3cf3f2-4361-461a-bd80-a5529350f5e4}</Project>
+      <Name>TeeGrid.WinForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\..\TCROOT\TeeChartForNET\Version 4\Sources\TeeChart\TeeChart45.csproj">
+      <Project>{1fa292fe-ba95-467b-976b-0eadcbf20528}</Project>
+      <Name>TeeChart45</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\techprodlogo25x25.png" />
   </ItemGroup>

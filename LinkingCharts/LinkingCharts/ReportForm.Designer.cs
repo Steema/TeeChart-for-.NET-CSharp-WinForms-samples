@@ -36,7 +36,7 @@
       this.____SalesByYearTableAdapter = new LinkingCharts.TechProductsLtdDataSetTableAdapters.____SalesByYearTableAdapter();
       this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
       this.___SalesByCountry_2015TableAdapter = new LinkingCharts.TechProductsLtdDataSetTableAdapters.@__SalesByCountry_2015TableAdapter();
-      this.dataGridView1 = new System.Windows.Forms.DataGridView();
+      this.dataGridView1 = new TeeGrid.WinForm.Grid.TeeGrid();
       this.sumOfInvoiceValueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.countrynameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.continentnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,7 +64,7 @@
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.techProductsLtdDataSet1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+      //((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
       this.panel1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -98,18 +98,18 @@
       // 
       dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(223)))), ((int)(((byte)(248)))));
       dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(103)))), ((int)(((byte)(135)))));
-      this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+      //this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
       this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-      this.dataGridView1.AutoGenerateColumns = false;
-      this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-      this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-      this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.sumOfInvoiceValueDataGridViewTextBoxColumn,
-            this.countrynameDataGridViewTextBoxColumn,
-            this.continentnameDataGridViewTextBoxColumn});
+      //this.dataGridView1.AutoGenerateColumns = false;
+      //this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+      //this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+      //this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      //this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+      //      this.sumOfInvoiceValueDataGridViewTextBoxColumn,
+      //      this.countrynameDataGridViewTextBoxColumn,
+      //      this.continentnameDataGridViewTextBoxColumn});
       this.dataGridView1.DataSource = this.bindingSource2;
-      this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
+      //this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
       this.dataGridView1.Location = new System.Drawing.Point(1109, 79);
       this.dataGridView1.Name = "dataGridView1";
       this.dataGridView1.Size = new System.Drawing.Size(347, 460);
@@ -1441,7 +1441,7 @@
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.techProductsLtdDataSet1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+      //((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
       this.panel1.ResumeLayout(false);
       this.panel1.PerformLayout();
@@ -1466,7 +1466,7 @@
     private BasePanel biPanel1;
     private System.Windows.Forms.BindingSource bindingSource2;
     private TechProductsLtdDataSetTableAdapters.__SalesByCountry_2015TableAdapter ___SalesByCountry_2015TableAdapter;
-    private System.Windows.Forms.DataGridView dataGridView1;
+    private TeeGrid.WinForm.Grid.TeeGrid dataGridView1;
     private System.Windows.Forms.DataGridViewTextBoxColumn sumOfInvoiceValueDataGridViewTextBoxColumn;
     private System.Windows.Forms.DataGridViewTextBoxColumn countrynameDataGridViewTextBoxColumn;
     private System.Windows.Forms.DataGridViewTextBoxColumn continentnameDataGridViewTextBoxColumn;

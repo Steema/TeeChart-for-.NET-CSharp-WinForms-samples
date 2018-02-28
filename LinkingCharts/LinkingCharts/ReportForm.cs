@@ -192,9 +192,9 @@ namespace LinkingCharts
       dataGridView1.DataSource = bindEurope;
       dataGridView1.Refresh();
 
-      dataGridView1.Columns[0].HeaderText = "Sales Income";
-      dataGridView1.Columns[1].HeaderText = "Country";
-      dataGridView1.Columns[2].HeaderText = "Continent";
+      dataGridView1.Columns[0].Header.Text = "Sales Income";
+      dataGridView1.Columns[1].Header.Text = "Country";
+      dataGridView1.Columns[2].Header.Text = "Continent";
 
       tChart3[0].DataSource = bindEurope;
       tChart3[0].YValues.DataMember = "SumOfInvoice_Value";
@@ -258,9 +258,10 @@ namespace LinkingCharts
         tChart1[1].Color = tChart3[0].ValueColor(valueIndex);
         refreshCountryYear(tChart3[0].Labels[valueIndex]);
 
-        dataGridView1.CurrentCell = this.dataGridView1[1, valueIndex];
-      }
-    }
+				//dataGridView1.Selected = this.dataGridView1[1, valueIndex];
+				//dataGridView1.Selected.Row = valueIndex;
+			}
+		}
 
     private void tChart3_ClickSeries(object sender, Steema.TeeChart.Styles.Series s, int valueIndex, MouseEventArgs e)
     {
@@ -270,7 +271,7 @@ namespace LinkingCharts
 
     private void dataGridView1_Click(object sender, EventArgs e)
     {
-      refreshCountryYear(tChart3[0].Labels[dataGridView1.CurrentCell.RowIndex]);
+      refreshCountryYear(tChart3[0].Labels[dataGridView1.Selected.Row]);
     }
   }
 }
