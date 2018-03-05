@@ -35,12 +35,16 @@ namespace LinkingCharts
       // TODO: This line of code loads data into the 'techProductsLtdDataSet1._____SalesByYear' table. You can move, or remove it, as needed.
       this.____SalesByYearTableAdapter.Fill(this.techProductsLtdDataSet1._____SalesByYear);
 
-      //test fill series
-      //tChart1[0].FillSampleValues();
-      //tChart2[0].FillSampleValues();
-      //tChart3[0].FillSampleValues();
+			//test fill series
+			//tChart1[0].FillSampleValues();
+			//tChart2[0].FillSampleValues();
+			//tChart3[0].FillSampleValues();
 
-      tChart1[0].CheckDataSource();  //country
+			//this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
+			this.dataGridView1.Selected.Change = dataGridView1_Click;
+
+
+			tChart1[0].CheckDataSource();  //country
       tChart2[0].CheckDataSource();  //continent
       tChart3[0].CheckDataSource();  //region
 
@@ -273,7 +277,9 @@ namespace LinkingCharts
 
     private void dataGridView1_Click(object sender, EventArgs e)
     {
-      refreshCountryYear(tChart3[0].Labels[dataGridView1.Selected.Row]);
+			int row = dataGridView1.Selected.Row;
+			if (row > -1)
+				refreshCountryYear(tChart3[0].Labels[row]);
     }
   }
 }

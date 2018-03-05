@@ -114,7 +114,6 @@
       this.dataGridView1.Name = "dataGridView1";
       this.dataGridView1.Size = new System.Drawing.Size(347, 460);
       this.dataGridView1.TabIndex = 10;
-      this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
       // 
       // sumOfInvoiceValueDataGridViewTextBoxColumn
       // 

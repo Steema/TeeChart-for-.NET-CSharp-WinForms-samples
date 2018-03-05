@@ -107,7 +107,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\..\TCROOT\TeeBI_NET\Grid\WinForm\TeeGrid.WinForm.csproj">
+    <Content Include="Resources\techprodlogo25x25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\TCROOT\TeeBINET\Grid\WinForm\TeeGrid.WinForm.csproj">
       <Project>{3e3cf3f2-4361-461a-bd80-a5529350f5e4}</Project>
       <Name>TeeGrid.WinForm</Name>
     </ProjectReference>
@@ -115,9 +118,6 @@
       <Project>{1fa292fe-ba95-467b-976b-0eadcbf20528}</Project>
       <Name>TeeChart45</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\techprodlogo25x25.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
