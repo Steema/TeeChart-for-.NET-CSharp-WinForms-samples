@@ -50,8 +50,6 @@ namespace LinkingCharts
 
 			tChart1.Panel.Gradient.Visible = true;
 
-			dataGridView1.DataSource = bindingSource2;
-
 			setHighestValueHistory();
 
 			setComments(commentType.global);
