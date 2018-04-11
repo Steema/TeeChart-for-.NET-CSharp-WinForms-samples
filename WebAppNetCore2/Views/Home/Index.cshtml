@@ -1,0 +1,130 @@
+﻿@{
+	ViewData["Title"] = "Steema Sofware - TeeChart for ASP.NET Core 2 MVC example";
+}
+
+<div class="row">
+	<h1>Introduction to TeeChart & ASP.NET Core 2 MVC</h1>
+	<p class="lead">TeeChart for .NET can render as an image format such as PNG or JPEG or as a javascript HTML5 Canvas object, fully dynamic on the page.</p>
+	<p><a class="btn btn-default" href="https://www.steema.com/product/net" target="_blank">Learn more &raquo;</a>
+</div>
+
+<div class="row">
+	<div class="col-md-8">
+		<p>These charts are created using an ActionResult but there are many ways to extract the rendered chart to the page.</p>
+		<iframe id="fr0" src="/Home/GetHTML5Chart?number=2" style="border:none; width:750px; height:350px"></iframe>
+	</div>
+	<div class="col-md-2" border="1">
+		<p>We're calling the script from the page in this way:<br /><font color="gray">/TeeChartMVC/GetHTML5Chart?type=2</font></p>
+		<br /><br />
+		<p>The TeeChart MVC Controller created for this example derives from System.Web.Mvc.Controller. The functionality is available with all TeeChart for .NET products.</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-8">
+		<p>basic required code:</p>
+		<pre>
+    public ActionResult GetHTML5Chart(int? number)
+    {
+      lock (renderLock)
+      {
+        Steema.TeeChart.TChart wChart3 = new Steema.TeeChart.TChart();
+
+        if (number==0) //react to input variables
+          wChart3.Series.Add(new Steema.TeeChart.Styles.Pie());
+        else
+          wChart3.Series.Add(new Steema.TeeChart.Styles.Line());
+
+        wChart3.Series[0].FillSampleValues(); //data fill routines
+
+        //optional - add in some custom javascript
+        string[] customCode = new string[] {" chart1.applyTheme(\"minimal\");" };
+        wChart3.Export.Image.JScript.CustomCode = customCode;
+
+        tempStream2 = new System.IO.MemoryStream(); //create stream for transport
+        wChart3.Export.Image.JScript.Width = 800; //size the Chart
+        wChart3.Export.Image.JScript.Height = 300;
+        wChart3.Export.Image.JScript.Save(tempStream2); //write to stream
+
+        tempStream2.Position = 0;
+        System.IO.StreamReader sr = new System.IO.StreamReader(tempStream2);
+
+        return Content(sr.ReadToEnd()); //return the Chart to the caller
+      }
+    }</pre>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-8">
+		<h2>Custom Javascript enhancements</h2>
+		<p>TeeChart will generate a Chart without requiring any javascript coding by you. The Chart is generated in .NET and the Javascript code with HTML5 Canvas is rendered for the output.</p>
+		<p>Optionally you can add enhancements to be actioned at any moment clientside in response to factors unavailable at Chart creation time. In the above chart we have added just one extra line to set a visualisation colour theme.</p>
+		<!--<iframe id="fr1" src='@Url.Action("..:22857/TeeChartMVC/GetPieChart", new { number = 3 })' style="border:none; width:100%; height:100%"></iframe>-->
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8">
+		<h3>HTML5 Chart with animation</h3>
+		<p>The chart below is running a repeat animation cycle (cycled so that we can see what it's doing). We've added some custome code into the javascript expoort of the Chart.</p>
+		<iframe id="fr2" src="/Home/GetHTML5Chart?type=1" style="border:none;  width:950px; height:350px"></iframe>
+		<p>
+			The code is added inline to the Chart code before render. The source-link path to the additional .js file that supports the feature, teechart-animations.js, is added as an additional
+			source link. The way the source link is called here is currently supported when using the WebChart component only, but the functionality has now been added for the September release to fully support MVC widgets.
+		</p>
+<pre>
+wChart3.Export.Image.JScript.SourceUnits.Add("teechart-animations.js");
+List<string> customCode = new List<string>();
+....
+wChart3.Series.Add(new Steema.TeeChart.Styles.Bar());
+
+List<string> extFunc = new List<string>();
+
+extFunc.Add("var animation;");
+extFunc.Add("var loopCounter = 0;");
+
+extFunc.Add("function manualLoop()");
+extFunc.Add("{");
+extFunc.Add("animation.animate(" + wChart3.Export.Image.JScript.ChartName +");");
+extFunc.Add("loopCounter++;");
+extFunc.Add("if (loopCounter < 10)");
+extFunc.Add("  setTimeout(manualLoop, 9000);");
+extFunc.Add("}");
+
+wChart3.Export.Image.JScript.ExternalCode = extFunc.ToArray();
+
+wChart3.Export.Image.JScript.SourceUnits.Add("teechart-animations.js");
+
+customCode.Add("   //animation");
+customCode.Add("   animation = new Tee.SeriesAnimation();");
+customCode.Add("   animation.duration = 3900;");
+customCode.Add("   animation.kind = \"each\";");
+customCode.Add("   fadeAnimation = new Tee.FadeAnimation();");
+customCode.Add("   fadeAnimation.duration = 5000;");
+customCode.Add("   fadeAnimation.fade.series = true;");
+customCode.Add("   fadeAnimation.fade.marks = true;");
+customCode.Add("   animation.mode = \"linear\"; ");
+customCode.Add("   fadeAnimation.mode = \"linear\";");
+customCode.Add("   animation.items.push(fadeAnimation);");
+customCode.Add("   ");
+customCode.Add("   animation.animate(chart1);");
+
+customCode.Add("  setTimeout(manualLoop, 6000); ");
+....
+mvcChart3.Export.Image.JScript.CustomCode = customCode.ToArray();
+</pre>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-md-8">
+		<h2>Interpolation Example</h2>
+		<p>This chart takes in some of the content from the previous examples and adds one further layer to aid analysis, interpolating Series values between points.</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-5">
+		<iframe id="fr0" src="/Home/GetInterpolatedChart?number=2" style="border:none; width:970px; height:450px"></iframe>
+	</div>
+</div>
