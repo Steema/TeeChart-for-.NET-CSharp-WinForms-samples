@@ -24,6 +24,8 @@ namespace LinkingCharts
 		public ReportForm()
 		{
 			InitializeComponent();
+			this.BackColor = Color.White;
+			TeeGrid.Themes.GridThemes.BlueFlat.ApplyTo(this.dataGridView1.Grid);
 		}
 
 		private void ReportForm_Load(object sender, EventArgs e)
