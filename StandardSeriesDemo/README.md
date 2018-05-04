@@ -15,3 +15,7 @@ The animated screenshot below shows a selection of Standard Series types availab
 
 You'll need TeeChart for .NET evaluation or registered version to run the example on this repository. Fully functional evaluation version can be obtained at https://www.steema.com/downloads/net
 
+------
+### Author
+------
+Josep Lluis Jorge @joseplluisjorge
