@@ -36,7 +36,7 @@
       this.____SalesByYearTableAdapter = new LinkingCharts.TechProductsLtdDataSetTableAdapters.____SalesByYearTableAdapter();
       this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
       this.___SalesByCountry_2015TableAdapter = new LinkingCharts.TechProductsLtdDataSetTableAdapters.@__SalesByCountry_2015TableAdapter();
-      this.dataGridView1 = new TeeGrid.WinForm.Grid.TeeGrid();
+      this.dataGridView1 = new Steema.TeeGrid.WinForm.TGrid();
       this.sumOfInvoiceValueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.countrynameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.continentnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,7 +64,7 @@
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.techProductsLtdDataSet1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
-      //((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
       this.panel1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1440,7 +1440,7 @@
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.techProductsLtdDataSet1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
-      //((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
       this.panel1.ResumeLayout(false);
       this.panel1.PerformLayout();
@@ -1465,7 +1465,7 @@
     private BasePanel biPanel1;
     private System.Windows.Forms.BindingSource bindingSource2;
     private TechProductsLtdDataSetTableAdapters.__SalesByCountry_2015TableAdapter ___SalesByCountry_2015TableAdapter;
-    private TeeGrid.WinForm.Grid.TeeGrid dataGridView1;
+    private Steema.TeeGrid.WinForm.TGrid dataGridView1;
     private System.Windows.Forms.DataGridViewTextBoxColumn sumOfInvoiceValueDataGridViewTextBoxColumn;
     private System.Windows.Forms.DataGridViewTextBoxColumn countrynameDataGridViewTextBoxColumn;
     private System.Windows.Forms.DataGridViewTextBoxColumn continentnameDataGridViewTextBoxColumn;
