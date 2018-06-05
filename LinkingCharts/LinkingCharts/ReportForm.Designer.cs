@@ -64,7 +64,7 @@
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.techProductsLtdDataSet1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+      //((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
       this.panel1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1440,7 +1440,7 @@
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.techProductsLtdDataSet1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+      //((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
       this.panel1.ResumeLayout(false);
       this.panel1.PerformLayout();
