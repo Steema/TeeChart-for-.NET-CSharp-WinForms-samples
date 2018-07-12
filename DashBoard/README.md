@@ -20,3 +20,6 @@ https://www.steema.com/downloads/net
 
 The TeeGrid assembly is available via Nuget from the Visual Studio IDE.
 
+Project output as follows:
+
+<img align="right" src="http://www.steema.com/img/gallery/dashboard.png">
