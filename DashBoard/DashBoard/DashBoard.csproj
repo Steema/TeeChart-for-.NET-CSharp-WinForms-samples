@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B07FD5DE-E774-4747-BC2B-671470D5C473}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DashBoard</RootNamespace>
+    <AssemblyName>DashBoard</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TeeChart, Version=4.2018.6.26, Culture=neutral, PublicKeyToken=9c8126276c77bdb7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TeeChart.dll</HintPath>
+    </Reference>
+    <Reference Include="TeeGrid.WinForm, Version=1.2018.6.5, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TeeGrid.WinForm.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TechProductsLtdDataSet.cs">
+      <DependentUpon>TechProductsLtdDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TechProductsLtdDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TechProductsLtdDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TechProductsLtdDataSet.xsc">
+      <DependentUpon>TechProductsLtdDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TechProductsLtdDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TechProductsLtdDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TechProductsLtdDataSet.xss">
+      <DependentUpon>TechProductsLtdDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="web\dashboard\assets\css\material-dashboard.css.map" />
+    <None Include="web\dashboard\assets\js\bootstrap-material-design.js.map" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\bootstrap-grid.css.map" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\bootstrap-grid.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\bootstrap-reboot.css.map" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\bootstrap-reboot.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\bootstrap.css.map" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\bootstrap.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_alert.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_background-variant.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_badge.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_border-radius.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_box-shadow.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_breakpoints.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_buttons.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_caret.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_clearfix.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_float.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_forms.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_gradients.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_grid-framework.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_grid.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_hover.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_image.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_list-group.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_lists.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_nav-divider.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_navbar-align.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_pagination.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_reset-text.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_resize.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_screen-reader.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_size.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_table-row.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_text-emphasis.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_text-hide.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_text-truncate.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_transition.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\mixins\_visibility.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\utilities\_align.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\utilities\_background.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\utilities\_borders.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\utilities\_clearfix.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\utilities\_display.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\utilities\_embed.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\utilities\_flex.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\utilities\_float.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\utilities\_position.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\utilities\_screenreaders.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\utilities\_sizing.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\utilities\_spacing.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\utilities\_text.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\utilities\_visibility.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_alert.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_badge.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_breadcrumb.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_button-group.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_buttons.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_card.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_carousel.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_close.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_code.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_custom-forms.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_dropdown.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_forms.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_functions.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_grid.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_images.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_input-group.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_jumbotron.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_list-group.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_media.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_mixins.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_modal.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_nav.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_navbar.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_pagination.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_popover.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_print.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_progress.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_reboot.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_root.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_tables.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_tooltip.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_transitions.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_type.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_utilities.scss" />
+    <None Include="web\dashboard\assets\scss\bootstrap\scss\_variables.scss" />
+    <None Include="web\dashboard\assets\scss\core\cards\_card-background.scss" />
+    <None Include="web\dashboard\assets\scss\core\cards\_card-blog.scss" />
+    <None Include="web\dashboard\assets\scss\core\cards\_card-collapse.scss" />
+    <None Include="web\dashboard\assets\scss\core\cards\_card-contact.scss" />
+    <None Include="web\dashboard\assets\scss\core\cards\_card-form-horizontal.scss" />
+    <None Include="web\dashboard\assets\scss\core\cards\_card-pricing.scss" />
+    <None Include="web\dashboard\assets\scss\core\cards\_card-product.scss" />
+    <None Include="web\dashboard\assets\scss\core\cards\_card-profile.scss" />
+    <None Include="web\dashboard\assets\scss\core\cards\_card-rotate.scss" />
+    <None Include="web\dashboard\assets\scss\core\cards\_card-signup.scss" />
+    <None Include="web\dashboard\assets\scss\core\cards\_card-testimonials.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_alert.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_animations.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_breakpoints.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_buttons.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_chartist.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_colored-shadows.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_drawer.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_forms.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_hover.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_layout.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_navbar-colors.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_navs.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_sidebar-color.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_transparency.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_type.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_utilities.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_variables.scss" />
+    <None Include="web\dashboard\assets\scss\core\mixins\_vendor-prefixes.scss" />
+    <None Include="web\dashboard\assets\scss\core\plugins\_animate.scss" />
+    <None Include="web\dashboard\assets\scss\core\plugins\_chartist.scss" />
+    <None Include="web\dashboard\assets\scss\core\plugins\_datatables.net.scss" />
+    <None Include="web\dashboard\assets\scss\core\plugins\_fullcalendar.scss" />
+    <None Include="web\dashboard\assets\scss\core\plugins\_jquery.jvectormap.scss" />
+    <None Include="web\dashboard\assets\scss\core\plugins\_perfect-scrollbar.scss" />
+    <None Include="web\dashboard\assets\scss\core\plugins\_plugin-bootstrap-select.scss" />
+    <None Include="web\dashboard\assets\scss\core\plugins\_plugin-datetime-picker.scss" />
+    <None Include="web\dashboard\assets\scss\core\plugins\_plugin-flexisel.scss" />
+    <None Include="web\dashboard\assets\scss\core\plugins\_plugin-nouislider.scss" />
+    <None Include="web\dashboard\assets\scss\core\plugins\_plugin-tagsinput.scss" />
+    <None Include="web\dashboard\assets\scss\core\plugins\_select-bootstrap.scss" />
+    <None Include="web\dashboard\assets\scss\core\plugins\_sweetalert2.scss" />
+    <None Include="web\dashboard\assets\scss\core\plugins\_wizard-card.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_body.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_bootstrap-material-design-base.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_bootstrap-material-design.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_brand.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_buttons.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_card.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_code.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_colors-map.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_colors.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_custom-forms.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_drawer.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_dropdown.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_forms.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_layout.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_list-group.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_menu.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_modals.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_nav.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_pagination.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_shadow.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_snackbar.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_spacing.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_state.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_tables.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_tooltip.scss" />
+    <None Include="web\dashboard\assets\scss\core\variables\_type.scss" />
+    <None Include="web\dashboard\assets\scss\core\_alerts.scss" />
+    <None Include="web\dashboard\assets\scss\core\_badges.scss" />
+    <None Include="web\dashboard\assets\scss\core\_buttons.scss" />
+    <None Include="web\dashboard\assets\scss\core\_cards.scss" />
+    <None Include="web\dashboard\assets\scss\core\_carousel.scss" />
+    <None Include="web\dashboard\assets\scss\core\_checkboxes.scss" />
+    <None Include="web\dashboard\assets\scss\core\_core-bootstrap.scss" />
+    <None Include="web\dashboard\assets\scss\core\_custom-forms.scss" />
+    <None Include="web\dashboard\assets\scss\core\_drawer.scss" />
+    <None Include="web\dashboard\assets\scss\core\_dropdown.scss" />
+    <None Include="web\dashboard\assets\scss\core\_example-pages.scss" />
+    <None Include="web\dashboard\assets\scss\core\_fixed-plugin.scss" />
+    <None Include="web\dashboard\assets\scss\core\_footers.scss" />
+    <None Include="web\dashboard\assets\scss\core\_forms.scss" />
+    <None Include="web\dashboard\assets\scss\core\_headers.scss" />
+    <None Include="web\dashboard\assets\scss\core\_images.scss" />
+    <None Include="web\dashboard\assets\scss\core\_info-areas.scss" />
+    <None Include="web\dashboard\assets\scss\core\_input-group.scss" />
+    <None Include="web\dashboard\assets\scss\core\_layout.scss" />
+    <None Include="web\dashboard\assets\scss\core\_list-group.scss" />
+    <None Include="web\dashboard\assets\scss\core\_misc.scss" />
+    <None Include="web\dashboard\assets\scss\core\_mixins.scss" />
+    <None Include="web\dashboard\assets\scss\core\_modal.scss" />
+    <None Include="web\dashboard\assets\scss\core\_nav.scss" />
+    <None Include="web\dashboard\assets\scss\core\_navbar.scss" />
+    <None Include="web\dashboard\assets\scss\core\_nucleo-outline.scss" />
+    <None Include="web\dashboard\assets\scss\core\_pages.scss" />
+    <None Include="web\dashboard\assets\scss\core\_pagination.scss" />
+    <None Include="web\dashboard\assets\scss\core\_pills.scss" />
+    <None Include="web\dashboard\assets\scss\core\_popover.scss" />
+    <None Include="web\dashboard\assets\scss\core\_popups.scss" />
+    <None Include="web\dashboard\assets\scss\core\_progress.scss" />
+    <None Include="web\dashboard\assets\scss\core\_radios.scss" />
+    <None Include="web\dashboard\assets\scss\core\_reboot.scss" />
+    <None Include="web\dashboard\assets\scss\core\_responsive.scss" />
+    <None Include="web\dashboard\assets\scss\core\_ripples.scss" />
+    <None Include="web\dashboard\assets\scss\core\_sidebar-and-main-panel.scss" />
+    <None Include="web\dashboard\assets\scss\core\_social-buttons.scss" />
+    <None Include="web\dashboard\assets\scss\core\_switches.scss" />
+    <None Include="web\dashboard\assets\scss\core\_tables.scss" />
+    <None Include="web\dashboard\assets\scss\core\_tabs.scss" />
+    <None Include="web\dashboard\assets\scss\core\_togglebutton.scss" />
+    <None Include="web\dashboard\assets\scss\core\_tooltip.scss" />
+    <None Include="web\dashboard\assets\scss\core\_type.scss" />
+    <None Include="web\dashboard\assets\scss\core\_variables.scss" />
+    <None Include="web\dashboard\assets\scss\material-dashboard.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\techprodlogo25x25.png" />
+    <Content Include="web\dashboard\assets\assets-for-demo\demo.css" />
+    <Content Include="web\dashboard\assets\assets-for-demo\docs.css" />
+    <Content Include="web\dashboard\assets\assets-for-demo\docs.min.css" />
+    <Content Include="web\dashboard\assets\assets-for-demo\features-5.jpg" />
+    <Content Include="web\dashboard\assets\assets-for-demo\js\docs.min.js" />
+    <Content Include="web\dashboard\assets\assets-for-demo\js\jquery.sharrre.js" />
+    <Content Include="web\dashboard\assets\assets-for-demo\js\modernizr.js" />
+    <Content Include="web\dashboard\assets\assets-for-demo\js\src\application.js" />
+    <Content Include="web\dashboard\assets\assets-for-demo\js\vendor\anchor.min.js" />
+    <Content Include="web\dashboard\assets\assets-for-demo\js\vendor\clipboard.min.js" />
+    <Content Include="web\dashboard\assets\assets-for-demo\js\vendor\holder.min.js" />
+    <Content Include="web\dashboard\assets\assets-for-demo\js\vendor\split.min.js" />
+    <Content Include="web\dashboard\assets\assets-for-demo\js\vertical-nav.js" />
+    <Content Include="web\dashboard\assets\assets-for-demo\modernizr.js" />
+    <Content Include="web\dashboard\assets\css\material-dashboard.css" />
+    <Content Include="web\dashboard\assets\css\material-dashboard.min.css" />
+    <Content Include="web\dashboard\assets\img\iconbox.png" />
+    <Content Include="web\dashboard\assets\img\icondollar.png" />
+    <Content Include="web\dashboard\assets\img\mask.png" />
+    <Content Include="web\dashboard\assets\js\bootstrap-material-design.js" />
+    <Content Include="web\dashboard\assets\js\bootstrap-material-design.min.js" />
+    <Content Include="web\dashboard\assets\js\core\jquery.min.js" />
+    <Content Include="web\dashboard\assets\js\core\popper.min.js" />
+    <Content Include="web\dashboard\assets\js\jsgrid\basicgrid.js" />
+    <Content Include="web\dashboard\assets\js\jsgrid\new 1.txt" />
+    <Content Include="web\dashboard\assets\js\material-dashboard.js" />
+    <Content Include="web\dashboard\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="web\dashboard\assets\js\teechart\areachart.js" />
+    <Content Include="web\dashboard\assets\js\teechart\barchart.js" />
+    <Content Include="web\dashboard\assets\js\teechart\contents.js" />
+    <Content Include="web\dashboard\assets\js\teechart\donutchart.js" />
+    <Content Include="web\dashboard\assets\js\teechart\lib\date.format.js" />
+    <Content Include="web\dashboard\assets\js\teechart\lib\teechart-3d.js" />
+    <Content Include="web\dashboard\assets\js\teechart\lib\teechart-canvas.js" />
+    <Content Include="web\dashboard\assets\js\teechart\lib\teechart-data.js" />
+    <Content Include="web\dashboard\assets\js\teechart\lib\teechart-editor.js" />
+    <Content Include="web\dashboard\assets\js\teechart\lib\teechart-gauges.js" />
+    <Content Include="web\dashboard\assets\js\teechart\lib\teechart-maps.js" />
+    <Content Include="web\dashboard\assets\js\teechart\lib\teechart-svg.js" />
+    <Content Include="web\dashboard\assets\js\teechart\lib\teechart-table.js" />
+    <Content Include="web\dashboard\assets\js\teechart\lib\teechart.js" />
+    <Content Include="web\dashboard\assets\js\teechart\lib\three.js" />
+    <Content Include="web\dashboard\assets\js\teechart\lib\Tween.js" />
+    <Content Include="web\dashboard\assets\js\teechart\mapchart.js" />
+    <Content Include="web\dashboard\assets\scss\bootstrap\scss\bootstrap-grid.css" />
+    <Content Include="web\dashboard\assets\scss\bootstrap\scss\bootstrap-reboot.css" />
+    <Content Include="web\dashboard\assets\scss\bootstrap\scss\bootstrap.css" />
+    <Content Include="web\dashboard\reports\icons.html" />
+    <Content Include="web\dashboard\reports\index.html" />
+    <Content Include="web\dashboard\reports\maps.html" />
+    <Content Include="web\dashboard\reports\notifications.html" />
+    <Content Include="web\dashboard\reports\table.html" />
+    <Content Include="web\dashboard\reports\testmap.html" />
+    <Content Include="web\dashboard\reports\typography.html" />
+    <Content Include="web\dashboard\reports\upgrade.html" />
+    <Content Include="web\dashboard\reports\user.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="web\dashboard\assets\js\teechart\lib\teechart.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="web\dashboard\data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
