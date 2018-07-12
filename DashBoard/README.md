@@ -7,13 +7,16 @@ The demo conatins two key elements:
 Winform project
 Web report page
 
-The demo accesses an Access mdb database, TeChproductsLtd.mdb.
+The demo accesses an Access mdb database, TechproductsLtd.mdb.
 
 Requirements:
+- teechart.dll
+- teegrid.dll
 
-To compile this demo you need the TeeChart assembly, teechart.dll. This can be downloaded via the evaluation version page:
+These assemblies are provisionally included with the project but will be removed when nuget access has been provided for TeeChart Pro (that includes the maps functionality)
 
+In the meantime the full TeeChart for .NET (Pro version) eval is available here:
 https://www.steema.com/downloads/net
 
-and the TeeGrid assembly available via Nuget from the Visual Studio IDE
+The TeeGrid assembly is available via Nuget from the Visual Studio IDE.
 
