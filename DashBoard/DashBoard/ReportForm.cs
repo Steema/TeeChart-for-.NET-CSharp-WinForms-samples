@@ -425,7 +425,7 @@ namespace DashBoard
 					{
 						return "NA";
 					}
-					else if (Acountry.ToUpper() == "RUSSIA")
+					else if ((Acountry.ToUpper() == "RUSSIA") || (Acountry.ToUpper() == "UK"))
 					{
 						return "EU";
 					}
@@ -433,6 +433,8 @@ namespace DashBoard
 					{
 						return "EU";
 					}
+					else //other country (?)
+						return "EU";
 				}
 
 				return continentsID.Rows[0]["continent"].ToString();
