@@ -1,58 +1,58 @@
-{ "chart": [
+ { "chart": [
   {
-   "series": {
-   "name":"MapSeries",
+   "series":  {
+   "name" :"MapSeries",
    "color":"#FFCCFFFF",
    "point": [
-     { "value":1372427, "x":0, "name":"Australia" , "id":"AU" }
+     { "value":1372427, "x" :0, "name":"Australia" , "id":"AU" }
 ,
-     { "value":414825, "x":0, "name":"Belgium" , "id":"BE" }
+     { "value":414825, "x" :0, "name":"Belgium" , "id":"BE" }
 ,
-     { "value":1794196, "x":0, "name":"Brazil" , "id":"BR" }
+     { "value":1794196, "x" :0, "name":"Brazil" , "id":"BR" }
 ,
-     { "value":1425960, "x":0, "name":"Canada" , "id":"CA" }
+     { "value":1425960, "x" :0, "name":"Canada" , "id":"CA" }
 ,
-     { "value":2006939, "x":0, "name":"Switzerland" , "id":"CH" }
+     { "value":738559, "x" :0, "name":"China" , "id":"CN" }
 ,
-     { "value":738559, "x":0, "name":"China" , "id":"CN" }
+     { "value":339077, "x" :0, "name":"Cyprus" , "id":"CY" }
 ,
-     { "value":339077, "x":0, "name":"Cyprus" , "id":"CY" }
+     { "value":770907, "x" :0, "name":"Denmark" , "id":"DK" }
 ,
-     { "value":167645, "x":0, "name":"Czech Republic" , "id":"CZ" }
+     { "value":167645, "x" :0, "name":"Czech Republic" , "id":"CZ" }
 ,
-     { "value":5174651, "x":0, "name":"Germany" , "id":"DE" }
+     { "value":13510840, "x" :0, "name":"Finland" , "id":"FI" }
 ,
-     { "value":770907, "x":0, "name":"Denmark" , "id":"DK" }
+     { "value":1415149, "x" :0, "name":"France" , "id":"FR" }
 ,
-     { "value":348446, "x":0, "name":"Spain" , "id":"ES" }
+     { "value":5174651, "x" :0, "name":"Germany" , "id":"DE" }
 ,
-     { "value":13510840, "x":0, "name":"Finland" , "id":"FI" }
+     { "value":829384, "x" :0, "name":"Italy" , "id":"IT" }
 ,
-     { "value":1415149, "x":0, "name":"France" , "id":"FR" }
+     { "value":6841352, "x" :0, "name":"Japan" , "id":"JP" }
 ,
-     { "value":17485354, "x":0, "name":"United Kingdom" , "id":"GB" }
+     { "value":6624183, "x" :0, "name":"South Korea" , "id":"KR" }
 ,
-     { "value":829384, "x":0, "name":"Italy" , "id":"IT" }
+     { "value":1316031, "x" :0, "name":"Netherlands" , "id":"NL" }
 ,
-     { "value":6841352, "x":0, "name":"Japan" , "id":"JP" }
+     { "value":450228, "x" :0, "name":"Norway" , "id":"NO" }
 ,
-     { "value":6624183, "x":0, "name":"South Korea" , "id":"KR" }
+     { "value":157244, "x" :0, "name":"New Zealand" , "id":"NZ" }
 ,
-     { "value":1316031, "x":0, "name":"Netherlands" , "id":"NL" }
+     { "value":388776, "x" :0, "name":"Poland" , "id":"PL" }
 ,
-     { "value":450228, "x":0, "name":"Norway" , "id":"NO" }
+     { "value":635154, "x" :0, "name":"South Africa" , "id":"ZA" }
 ,
-     { "value":157244, "x":0, "name":"New Zealand" , "id":"NZ" }
+     { "value":348446, "x" :0, "name":"Spain" , "id":"ES" }
 ,
-     { "value":388776, "x":0, "name":"Poland" , "id":"PL" }
+     { "value":745458, "x" :0, "name":"Sweden" , "id":"SE" }
 ,
-     { "value":745458, "x":0, "name":"Sweden" , "id":"SE" }
+     { "value":2006939, "x" :0, "name":"Switzerland" , "id":"CH" }
 ,
-     { "value":15339, "x":0, "name":"Tunisia" , "id":"TN" }
+     { "value":15339, "x" :0, "name":"Tunisia" , "id":"TN" }
 ,
-     { "value":100733125, "x":0, "name":"United States of America" , "id":"US" }
+     { "value":17485354, "x" :0, "name":"UK" , "id":"GB" }
 ,
-     { "value":635154, "x":0, "name":"South Africa" , "id":"ZA" }
+     { "value":100733125, "x" :0, "name":"United States" , "id":"US" }
    ]
    }
   }

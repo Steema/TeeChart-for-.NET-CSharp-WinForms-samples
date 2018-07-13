@@ -38,6 +38,8 @@ namespace DashBoard
 		int gEndYear;
 		Steema.TeeChart.Styles.Series BarSeriesClicked;
 		bool tChart1Loaded = false;
+		bool first;
+		DataTable CountryCodeTable;
 
 
 
@@ -201,14 +203,25 @@ namespace DashBoard
 
 			//-----------TChart4 MapWorld Init-----------//
 			Steema.TeeChart.Themes.ColorPalettes.ApplyPalette(tChart4.Chart, BlueFlatPalette);
-			FillMapValues();
 			world1.UsePalette = true;
 			world1.UseColorRange = false;
+			first = true;
+
+			//-----------Create Country ID Table-----------//
+			CountryCodeTable = new DataTable();
+			DataColumn Sales = new DataColumn("ValueSales", typeof(double));
+			DataColumn ID = new DataColumn("ID", typeof(string));
+			CountryCodeTable.Columns.Add(Sales);
+			CountryCodeTable.Columns.Add(ID);
+
+			FillMapValues();
+			FillMapCountryData();
 
 			world1.Color = BlueFlatPalette[3];
 			world1.Click += World1_Click;
 			tChart4.AfterDraw += TChart4_AfterDraw;
 			tChart4.Resize += TChart4_Resize;
+		
 			tChart4.Refresh();
 			tChart4.Refresh();
 			tChart4.Refresh();
@@ -615,7 +628,58 @@ namespace DashBoard
 			tChart3[0].CheckDataSource();
 			setHighestValueHistory();
 		}
+		
+			private void FillMapCountryData()
+		{
+			Double Svalue;
+			string countryName;
+			//as it will be useful for all sold-to countries appear in the Pie, even if no sales were made in 2015
+			string sqlStr = "SELECT Sum(Fact_Invoices.Invoice_Value) AS SumOfInvoice_Value, Lookup_Country.Country_name, Lookup_Continent.continent_name, Lookup_Country.Country_code_A2";
+			sqlStr += " FROM ((Lookup_Continent INNER JOIN Lookup_Country ON Lookup_Continent.continent = Lookup_Country.Continent) INNER JOIN Lookup_Customers ON Lookup_Country.Country_code_A2 = Lookup_Customers.Country_code_A2)";
+			sqlStr += " INNER JOIN Fact_Invoices ON Lookup_Customers.Cod_Customer = Fact_Invoices.Cod_Customer";
+			sqlStr += " GROUP BY Lookup_Country.Country_name, Lookup_Continent.continent_name, Lookup_Country.Country_code_A2";
 
+
+			DataSet country = new DataSet();
+
+			System.Data.OleDb.OleDbDataAdapter myAdapter = new System.Data.OleDb.OleDbDataAdapter(sqlStr, this.___SalesByCountryTableAdapter.Connection);
+
+
+			myAdapter.SelectCommand.Parameters.Clear();
+			myAdapter.SelectCommand.Parameters.Insert(0, new System.Data.OleDb.OleDbParameter());
+			myAdapter.Fill(country, "countrySales");
+
+			DataTable countryBySalesName = country.Tables[0];
+			
+			int idx = 0;
+			while (idx <= countryBySalesName.Rows.Count - 1)
+			{
+				Svalue = Convert.ToDouble(countryBySalesName.Rows[idx]["SumOfInvoice_Value"].ToString());
+				countryName = countryBySalesName.Rows[idx]["Country_Name"].ToString();
+				if (countryName == "United Kingdom")
+				{
+					countryName = "UK";
+				}
+				else if (countryName == "Korea, Republic of")
+				{
+					countryName = "South Korea";
+				}
+				//-----------Save the Country Code-----------//
+				DataRow newRow = CountryCodeTable.NewRow();
+				newRow["ValueSales"] = Convert.ToDouble(countryBySalesName.Rows[idx]["SumOfInvoice_Value"].ToString());
+				newRow["ID"] = countryBySalesName.Rows[idx]["Country_code_A2"].ToString();
+				CountryCodeTable.Rows.Add(newRow);
+
+				for (int i = 0; i < world1.Count; ++i)
+				{
+					if (world1.Labels[i].ToUpper() == countryName.ToUpper())
+					{
+						world1.ZValues[i] = Svalue;
+					}
+				}
+				idx++;
+			}
+		}
 
 		private void FillMapValues()
 		{
@@ -675,8 +739,6 @@ namespace DashBoard
 								break;
 							case "OC":
 								world1.Colors[i] = BlueFlatPalette[5];
-								if(world1.Shapes[i].Index ==25)
-								{ world1.Labels[i] = "AUSTRALIA"; }
 								break;
 							case "SA":
 								world1.Colors[i] = BlueFlatPalette[6];
@@ -930,7 +992,7 @@ namespace DashBoard
 			}
 		}
 
-		private void Export_Click(object sender, EventArgs e)
+private void Export_Click(object sender, EventArgs e)
 		{
 			string data = Steema.TeeGrid.JSON.JSONData.From(TeeGrid1.Grid, true, null, true);
 
@@ -947,8 +1009,8 @@ namespace DashBoard
 			tChart4.Export.Data.JSON.IncludeColors = false;
 
 			//MapChart
-			//commented pending final change to map export code
-			//tChart4.Export.Data.JSON.Save(roothpath + @"\MapChart.JSON");
+			ExportMapSeries(rootpath + @"\MapChart.JSON");
+		//	tChart4.Export.Data.JSON.Save(rootpath + @"\MapChart.JSON");
 			//AreaChart
 			//tChart1.Export.Data.JSON.
 			tChart1.Export.Data.JSON.Save(rootpath + @"\AreaChart.JSON");
@@ -970,11 +1032,71 @@ namespace DashBoard
 				file.WriteLine("var aCountry = \"" + activeCountry +"\";");
 				file.WriteLine("var aStartyear = \"" + startYr.ToString()+"\";");
 				file.WriteLine("var aEndyear = \"" + endYr.ToString()+"\";");
+				file.Flush();
+				file.Close();
 			}  
 
 			System.Diagnostics.Process.Start(@"http://localhost/dashboard/reports/index.html");
 		}
 
+		private void ExportMapSeries(string FileName)
+		{
+			//Var 
+			double Zval;
+			string CountryCode, oldCountry;
+			CountryCode = "";
+			oldCountry = ".";
+			using (System.IO.StreamWriter file = new System.IO.StreamWriter(FileName, false, Encoding.ASCII))
+			{
+				file.WriteLine(" { \"" + "chart" + "\": [");
+				file.WriteLine("  {");
+				file.WriteLine("   \"" + "series" + "\":  {");
+				file.WriteLine("   \"" + "name" + "\" :" + "\"" + "MapSeries" + "\",");
+				file.WriteLine("   \"" + "color" + "\":" + "\"" + "#FFCCFFFF" + "\",");
+				file.WriteLine("   \"" + "point" + "\": [");
+			
+				for (int i = 0; i < world1.Count; ++i)
+				{
+					Zval = world1.ZValues[i];
+
+					if (Zval != 0)
+					{
+						
+						if (oldCountry != world1.Labels[i])
+						{
+							oldCountry = world1.Labels[i];
+							for (int idx = 0; idx < CountryCodeTable.Rows.Count; ++idx)
+							{
+								if (Zval == Convert.ToDouble(CountryCodeTable.Rows[idx]["ValueSales"]))
+								{
+									CountryCode = CountryCodeTable.Rows[idx]["ID"].ToString();
+								}
+							}
+
+							if (first)
+							{
+								first = false;
+							}
+							else
+							{
+								file.WriteLine(",");
+							}
+							
+							file.WriteLine("     { \"" + "value" + "\":" + world1.ZValues[i].ToString() + ", \"" + "x" + "\" :0, \"" + "name" + "\":\"" + world1.Labels[i] + "\" , \"" + "id" + "\":\"" + CountryCode + "\" }");
+						}
+
+					}
+				}
+				file.WriteLine("   ]");
+				file.WriteLine("   }");
+				file.WriteLine("  }");
+				file.WriteLine(" ]");
+				file.WriteLine("}");
+				file.Flush();
+				file.Close();
+				first = true;
+			}
+		}
 		private void tChart2_MouseDoubleClick(object sender, MouseEventArgs e)
 		{
 			tChart2.ShowEditor();
