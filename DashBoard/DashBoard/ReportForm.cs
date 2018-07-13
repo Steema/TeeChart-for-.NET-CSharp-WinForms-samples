@@ -61,8 +61,12 @@ namespace DashBoard
 
 		}
 
+		private System.Globalization.NumberFormatInfo nfi;
 		private void ReportForm_Load(object sender, EventArgs e)
 		{
+			nfi = new System.Globalization.CultureInfo(System.Globalization.CultureInfo.CurrentCulture.ToString(), false).NumberFormat;
+			nfi.CurrencyDecimalDigits = 0;
+
 			// TODO: This line of code loads data into the 'techProductsLtdDataSet1.Lookup_Continent' table. You can move, or remove it, as needed.
 			this.lookup_ContinentTableAdapter.Fill(this.techProductsLtdDataSet1.Lookup_Continent);
 			// TODO: This line of code loads data into the 'techProductsLtdDataSet1.Fact_Orders' table. You can move, or remove it, as needed.
@@ -281,7 +285,7 @@ namespace DashBoard
 			myAdapter.Fill(TotalSalesData, "TotalSales");
 
 			DataTable TotalSalesTable = TotalSalesData.Tables[0].Columns["SumOfInvoice_Value"].Table;
-			LBTotalSales.Text = Convert.ToDouble(TotalSalesTable.Rows[0][0]).ToString("C", System.Globalization.CultureInfo.CurrentCulture);
+			LBTotalSales.Text = Convert.ToDouble(TotalSalesTable.Rows[0][0]).ToString("C", nfi);
 		}
 		//Get Total  Items Sold
 		private void GetTotalItemsSold()
@@ -300,7 +304,7 @@ namespace DashBoard
 
 
 			DataTable TotalSalesTable = TotalItemsSoldData.Tables[0].Columns["SumOfPack_Qty"].Table;
-			LBTotalItemsSold.Text = Convert.ToDouble(TotalSalesTable.Rows[0][0]).ToString("C", System.Globalization.CultureInfo.CurrentCulture);
+			LBTotalItemsSold.Text = Convert.ToDouble(TotalSalesTable.Rows[0][0]).ToString("C", nfi);
 
 		}
 		//Get Total Sales By Country Bentween Years
@@ -339,7 +343,7 @@ namespace DashBoard
 		{
 			LBTotalSalesCountryBT.Text = "Total Sales in" + "\n" + Acountry;
 			LBBetween.Text = "between " + AStart + " and " + AEnd;
-			LBTotalSalesCountryBTValue.Text = GetTotalSalesByCountryBetween(Acountry, AStart, AEnd).ToString("C", System.Globalization.CultureInfo.CurrentCulture);
+			LBTotalSalesCountryBTValue.Text = GetTotalSalesByCountryBetween(Acountry, AStart, AEnd).ToString("C", nfi);
 		}
 
 		private void RefreshGrid(string startYear, string endYear)
@@ -915,7 +919,7 @@ namespace DashBoard
 				tChart1.Header.Text = "Sales by Country : " + tChart3[0].Labels[valueIndex];
 
 				label4.Text = "Total Sales in" + "\n" + tChart3[0].Labels[valueIndex].ToString();
-				LBTotalSalesCountryValue.Text = tChart3[0].YValues[valueIndex].ToString("C", System.Globalization.CultureInfo.CurrentCulture);
+				LBTotalSalesCountryValue.Text = tChart3[0].YValues[valueIndex].ToString("C", nfi);
 				UpdateTotalSalesByCountryBetweenLabels(tChart3[0].Labels[valueIndex], startYr.ToString(), endYr.ToString());
 
 				TeeGrid1.Selected.Row = valueIndex;

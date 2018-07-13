@@ -56,54 +56,16 @@ function applyPalette(chart){
   }
 }
 
-function addCommas(str) {
-	
-	//take format from exported variables
-	
-    /*var parts = (str + "").split("."),
-        main = parts[0],
-        len = main.length,
-        output = "",
-        first = main.charAt(0),
-        i;
-
-    if (first === '-') {
-        main = main.slice(1);
-        len = main.length;    
-    } else {
-        first = "";
-    }
-    i = len - 1;
-    while(i >= 0) {
-        output = main.charAt(i) + output;
-        if ((len - i) % 3 === 0 && i > 0) {
-            output = "," + output;
-        }
-        --i;
-    }
-    // put sign back
-    output = first + output;
-    // put decimal part back
-    if (parts.length > 1) {
-        output += "." + parts[1];
-    }
-    return output;*/
-	
-	return str;
-}
-
 function addVars()
 {
-   $("#totalsales")[0].innerHTML = addCommas(aTotalsales) + "€";
-   $("#totalitemssold")[0].innerHTML = addCommas(aTotalitemssold) + "";
-   $("#totalsalesin")[0].innerHTML = addCommas(aTotalsalesin);
-   $("#totalsalesinbetween")[0].innerHTML = addCommas(aTotalsalesinbetween) + "€";
+   $("#totalsales")[0].innerHTML = aTotalsales;
+   $("#totalitemssold")[0].innerHTML = aTotalitemssold;
+   $("#totalsalesin")[0].innerHTML = aTotalsalesin;
+   $("#totalsalesinbetween")[0].innerHTML = aTotalsalesinbetween;
    $("#salesCtry1")[0].innerText = $("#salesCtry2")[0].innerText = aCountry;
    $("#totalsalesyearspan")[0].innerHTML = "<small>Between "+aStartyear+" and "+aEndyear+"</small>";
    
    $("#totalsalescountry")[0].innerText = "Total Sales In "+aCountry; 
-   //+" <small>Between "+aStartyear+" and "+aEndyear</small>  + "";
-   //$("#country")[0].innerHTML = addCommas(aTotalsalesinbetween) + "€";
 }
 
 function drawElements() {
