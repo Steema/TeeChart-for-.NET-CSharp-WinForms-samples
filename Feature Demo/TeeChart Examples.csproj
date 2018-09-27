@@ -145,7 +145,6 @@
     <Reference Include="System.Data">
       <Name>System.Data</Name>
     </Reference>
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Design">
       <Name>System.Design</Name>
     </Reference>
@@ -162,7 +161,7 @@
       <Name>System.XML</Name>
     </Reference>
     <Reference Include="TeeChart, Version=4.2018.9.27, Culture=neutral, PublicKeyToken=9c8126276c77bdb7, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\Users\Chris Ireland\source\repos\TeeChartPro\packages\Steema.TeeChart.NET.4.2018.9.271\lib\net20\TeeChart.dll</HintPath>
+      <HintPath>packages\Steema.TeeChart.NET.4.2018.9.271\lib\net20\TeeChart.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -2149,7 +2148,6 @@
       <DependentUpon>Chart_PrintPreview.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Series\Area_Gradient.resx">
       <DependentUpon>Area_Gradient.cs</DependentUpon>
       <SubType>Designer</SubType>
