@@ -13,7 +13,7 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyProduct("")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]		
+[assembly: AssemblyCulture("")]
 
 //
 // Version information for an assembly consists of the following four values:
@@ -27,9 +27,9 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 #if VS2005
-[assembly: AssemblyVersion("4.1.2017.02153")]
+[assembly: AssemblyVersion("4.2017.9.27")]
 #else
-[assembly: AssemblyVersion("3.5.3330.21112")]
+[assembly: AssemblyVersion("4.2017.9.27")]
 #endif
 
 //

@@ -11,7 +11,7 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Steema Software")]
 [assembly: AssemblyProduct("TeeChart")]
-[assembly: AssemblyCopyright("2005 by David Berneda and Marc Meumann")]
+[assembly: AssemblyCopyright("2018 by Steema Software")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]		
 
@@ -26,9 +26,9 @@ using System.Runtime.CompilerServices;
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
 #if VS2005
- [assembly: AssemblyVersion("4.1.2017.02153")]
+ [assembly: AssemblyVersion("4.2018.9.27")]
 #else
-[assembly: AssemblyVersion("4.1.2012.02280")]
+[assembly: AssemblyVersion("4.2018.9.27")]
 #endif
 
 //
