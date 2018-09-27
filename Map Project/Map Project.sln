@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Map Project", "Map Project.csproj", "{78ADBC52-94B8-46C9-865D-D123E216ADCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{6D578C6E-191C-42F5-866E-A1279B567018}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\Users\Chris Ireland\source\repos\TeeChart-for-.NET-CSharp-WinForms-samples\Feature Demo\nuget.config = ..\..\..\..\..\Users\Chris Ireland\source\repos\TeeChart-for-.NET-CSharp-WinForms-samples\Feature Demo\nuget.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78ADBC52-94B8-46C9-865D-D123E216ADCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78ADBC52-94B8-46C9-865D-D123E216ADCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78ADBC52-94B8-46C9-865D-D123E216ADCE}.Debug|x64.ActiveCfg = Debug|x64
+		{78ADBC52-94B8-46C9-865D-D123E216ADCE}.Debug|x64.Build.0 = Debug|x64
+		{78ADBC52-94B8-46C9-865D-D123E216ADCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78ADBC52-94B8-46C9-865D-D123E216ADCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78ADBC52-94B8-46C9-865D-D123E216ADCE}.Release|x64.ActiveCfg = Release|x64
+		{78ADBC52-94B8-46C9-865D-D123E216ADCE}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB275AA2-E360-4E41-83BF-BA3596A27E17}
+	EndGlobalSection
+EndGlobal
