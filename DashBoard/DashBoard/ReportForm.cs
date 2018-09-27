@@ -716,7 +716,7 @@ namespace DashBoard
 					country = "UK";
 				}
 
-				for (int i = 0; i < world1.Count; i++)
+				for (int i = 0; i < world1.Shapes.Count; i++)
 				{
 					if (world1.Labels[i].ToUpper() == country.ToUpper() || world1.Labels[i].Contains(country))
 					{
