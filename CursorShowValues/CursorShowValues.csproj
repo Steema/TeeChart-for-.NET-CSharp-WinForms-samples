@@ -88,10 +88,8 @@
     <Reference Include="System.XML">
       <Name>System.XML</Name>
     </Reference>
-    <Reference Include="teechart">
-      <Name>teechart</Name>
-      <HintPath>..\..\..\..\..\archivos de programa\steema software\teechart for .net v1\teechart.dll</HintPath>
-      <AssemblyFolderKey>hklm\dn\teechart</AssemblyFolderKey>
+    <Reference Include="TeeChart, Version=4.2018.9.27, Culture=neutral, PublicKeyToken=9c8126276c77bdb7, processorArchitecture=MSIL">
+      <HintPath>packages\Steema.TeeChart.NET.4.2018.9.271\lib\net20\TeeChart.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +101,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

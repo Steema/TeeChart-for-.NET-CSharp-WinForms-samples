@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Map Project", "Map Project.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{6D578C6E-191C-42F5-866E-A1279B567018}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\Users\Chris Ireland\source\repos\TeeChart-for-.NET-CSharp-WinForms-samples\Feature Demo\nuget.config = ..\..\..\..\..\Users\Chris Ireland\source\repos\TeeChart-for-.NET-CSharp-WinForms-samples\Feature Demo\nuget.config
+		nuget.config = nuget.config
 	EndProjectSection
 EndProject
 Global
