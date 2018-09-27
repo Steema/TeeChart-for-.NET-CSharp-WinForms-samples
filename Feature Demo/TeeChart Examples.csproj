@@ -1,0 +1,3161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B24A17B4-3B1F-42C1-BAD3-C8DA0AF51BFB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>TeeChartExamples.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>TeeChartNetExamples</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <GenerateResourceNeverLockTypeAssemblies>true</GenerateResourceNeverLockTypeAssemblies>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Steema.TeeChart.Samples</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>Steema.TeeChart.Samples.MainForm</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/TeeChartNetExamples/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;VS2005;DESIGN</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>3</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin1\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DESIGNATTRIBUTES;VS2005;EVALVER</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;VS2005;DESIGN</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <WarningLevel>3</WarningLevel>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>DESIGNATTRIBUTES;VS2005</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;VS2005;DESIGN</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <WarningLevel>3</WarningLevel>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>DESIGNATTRIBUTES;VS2005;EVALVER</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="TeeChart, Version=4.2018.9.27, Culture=neutral, PublicKeyToken=9c8126276c77bdb7, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Users\Chris Ireland\source\repos\TeeChartPro\packages\Steema.TeeChart.NET.4.2018.9.271\lib\net20\TeeChart.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animations\Animations_ChartPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_SubAxes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Canvas_FontQuality.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Canvas_HtmlText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Canvas_PenFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Axis\Axes_DrawBevels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axes_LabelsFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axes_Offsets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axes_ZPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\AxisTitle_Visible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_Behind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_Custom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_DepthDateTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_DepthTop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_Exponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_FirstLastLabels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_GetAxisLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_GridDrawEvery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_Isometric.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_LabelAlign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_LabelsAlternate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_MaxMinRounded.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_Millisec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_MinorGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_MultiScroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Axis_OpaqueZone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\LocalMinMax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Log_CustomIncrement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axis\Page_AutoScale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Canvas_180Rotation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Canvas_AntiAlias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Canvas_CustomGradients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Canvas_DotPen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Canvas_ICloneable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Canvas_OrthoAngle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Canvas_PyramidTrunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Canvas_RotatedEllipse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Canvas_RotCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Canvas_SmoothShadow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Canvas_Transparency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Chart_OnBeforeDraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\CompactCharts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\Gradient_MidColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canvas\RichText_Drawing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\ChartBook_Demo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\ChartEditor_Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\ChartGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\ChartLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\ChartListBox_Demo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\ChartListBox_Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\ChartListBox_Enable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\ChartListBox_Radio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Chart_Gallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Commander_Custom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Commander_Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Gallery_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Series_TextSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Series_XMLSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\TeeCommander_Demo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSource\DataConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSource\DatasetEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSource\DateTimeData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSource\DBChart_CrossTabSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSource\DBChart_SingleRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSource\DBDrillDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSource\DBDrillDown.Designer.cs">
+      <DependentUpon>DBDrillDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Export\Bitmap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Export_JScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Export_Excel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Export_GIF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Export_HTML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Export_HTML5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Export_JPEG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Export_Metafile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Export_ODS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Export_PDF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Export_PNG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Export_SVG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Export_Text.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Export_VML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Export_XML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\PostScript_Demo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\Template_Chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export\TIFF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\CurveFitting_Coef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\CurveFitting_Models.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Exponential_Trend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_AC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_ADX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Alligator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_AO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_ATR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Average.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Bollinger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_CCI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_CLV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Compression.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Correlation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Count.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_CrossPoints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Cumulative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_CurveFitting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Custom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Divide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_DownSampling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_DSamp_MMFLN_DPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_ExpAve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_ExpMovAve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Gator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Histogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Kurtosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Median.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Mode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Momentum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_MoneyFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Multiply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_OBV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_PercentChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Performance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Perimeter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_PVO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_RootMeanSq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_RVI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_SAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Skewness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Slope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_SmoothedMovingAverage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Smoothing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_SPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_StdDeviation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Subtract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Trend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Function_Variance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\MACD_Function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\MomentumDiv_Function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\RSI_Function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import\Import_Text.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import\WebSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_AddText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_CheckBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_CustomPos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_DrawBehind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_FontColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_Multi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_Scroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_SymbolBorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_SymbolFlags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_SymbolShadow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_TextStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_Title.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_VertSpa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Legend_Widths.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marks\Marks_Angle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marks\Marks_Callout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marks\Marks_DrawEvery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marks\Marks_Multi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marks\Marks_NewStyles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marks\Marks_PerPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marks\Marks_Shadow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marks\Marks_XYStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\BaseNoChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\Basic_Features.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\Chart_Clipboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\Chart_MultiLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\Chart_NewLanguages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\Fixed_Defects_v2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\Order_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\ShadowEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\Welcome_All.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel\Chart_RoundPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel\Chart_Shadow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel\Margins_Units.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel\Panel_ImageBevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\Chart_PrintPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Series\Area_Gradient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Area_Origin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Area_SalesPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Area_StackGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Area_Stairs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Area_Transparency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Area_TreatNulls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\BarJoin_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\BarSize.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Series\Bar_3DDepth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Bar_Gradient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Bar_Image.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Bar_MarksOnBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Bar_SelfStack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Bar_SideAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Bar_StackGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Bar_TickLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\BoxPlot_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\BoxSeries_CustomValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Bubble_Sphere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Bubble_Transparency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Candle_AxisLabels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Candle_CustomColors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Candle_HighLowPen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Candle_OnGetPointer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Canvas_Cone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Circled_Gradient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\CircularGauge_ColorLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\CircularGauge_DisplayAngle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\CircularGauge_Embed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\CircularGauge_LGauge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\CircularGauge_NGauge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\CircularGauge_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\ClockGauge_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\ColorGrid_Bitmap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\ColorGrid_Marks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\ColorGrid_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Contour_Filled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Contour_Foot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Contour_Frame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Contour_Levels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Contour_Palette.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Contour_LevelMarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Contour_Pointer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Contour_View2D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Gantt_MultipleNextTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Master_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_ErrorPoint3D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_ErrorPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\CustomPolar_GetPointerStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\CustomPolar_TreatNulls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Custom_PointerHexagon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Darvas_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\DeltaPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Donut_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\ErrorBar_Negative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\FastLine_DrawAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\FastLine_Nulls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\FastLine_Realtime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\FastLine_TreatNulls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\GridSUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Series\HighLow_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Histogram_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Histogram_Transparency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Histogram_YOrigin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\HorizLine_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\IsoSurface_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Kagi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\KnobGauge_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\LinearGauge_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Line_Clickable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Line_ColorEachLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Line_Interpolate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Line_Outline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Line_Pattern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Custom_Smoothed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Line_Stack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Line_TreatNulls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Map_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Map_Transparency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Marks_Symbols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\NumericGauge_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Organizational_Chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Pie_AutoMarkPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Pie_Lighting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Pie_MarksLegSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Pie_MarksVertCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Pie_Multi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Pie_OtherLegend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Pie_Semi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Pie_Shadow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Pie_ShadowEllipse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Pie_SliceHeights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Point3D_BaseLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Point3D_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Point3D_Nulls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Point_TreatNulls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\PolarRadar_Transparency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Polar_ClockWise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Polar_LabelsInside.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Polar_Nulls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Polar_Smooth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Polar_Zones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Pyramid_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Realtime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series3D_AddArray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Arrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Bar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Bezier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Bubble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Candle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Clock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Contour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_FastLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Gantt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_HorizArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_HorizBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_ImagePoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Line.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Pie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Point.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Point3D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Polar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Radar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Surface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Tower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\SeriesType_Volume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_Bar3D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_BarNegativeStacked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_BarSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_Funnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_Gauge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_Groups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_HorizHisto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_ImageBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_MouseEnter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_MyPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_NullableValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_PointFigure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_PolarBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_PolarGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_Renko.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_Shape.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_SortLabels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_TagCloud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Series_Vector3D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Shape_Image.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Shape_VertAlign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Smith_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Surface_HideCells.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Surface_Irregular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Surface_Palette.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Surface_Sides.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Surface_Smoothing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Surface_Transparency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Surface_WirePalette.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Surface_XYZFloat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\TeeSmoothGrid3D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Series\Ternary_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Tower_Clicked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Tower_Stacked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\TreeMap_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\TriSurface_Hidding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\TriSurface_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\VolumePipe_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\Volume_Origin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\WaterFall_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\WindRose_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\WorldMapDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Series\XYZ_Gridding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechProductsLtdDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TechProductsLtdDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\Chart_Palettes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themes\Chart_Themes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themes\Theme_Custom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Axes_GridBands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Axes_GridBandsCentered.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\ColorBand_Clicked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\ColorBand_Drag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\ColorBand_Transparent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Cursor_Scope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\DrawLine_Style.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\GanttTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Legend_ScrollBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\NearestTool_Direction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Rotate_Inertia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tools_ColorBand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tools_ColorLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tools_DrawLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tools_DrawLineDragged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tools_DrawLineEscape.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tools_Image.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tools_Nearest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tools_ScrollPager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tools_SeriesAnim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_3DTranspose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_Annotation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_AnnotationAllowEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_AnnotationCallout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_AnnotationClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_AxisArrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_AxisBreaks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_AxisScroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_BannerTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_ClipSeries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_Cursor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_CursorProg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_CursorSynchro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_DataTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_DragMarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_DragPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_ExtraLegend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_Fader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_Fibonacci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_FullScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_LegendPalette.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_Lighting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_Magnify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_MarksTip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_Pie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_Rectangle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_Rotate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_RotateOutline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_RotateRotating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_Selector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_SeriesBand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_SeriesRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_SeriesStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_SeriesTranspose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_SubChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool_SurfaceNearest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\DemoTreeNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\SourceUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Walls\Wall_AutoHide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Walls\Wall_Transparency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zoom_Scroll\Zoom_Direction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zoom_Scroll\Zoom_KeyShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zoom_Scroll\Zoom_MinPix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zoom_Scroll\Zoom_Pen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zoom_Scroll\Zoom_Scroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Animations\Animations_ChartPart.resx">
+      <DependentUpon>Animations_ChartPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_SubAxes.resx">
+      <DependentUpon>Axis_SubAxes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Canvas_FontQuality.resx">
+      <DependentUpon>Canvas_FontQuality.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Canvas_HtmlText.resx">
+      <DependentUpon>Canvas_HtmlText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Canvas_PenFill.resx">
+      <DependentUpon>Canvas_PenFill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axes_DrawBevels.resx">
+      <DependentUpon>Axes_DrawBevels.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axes_LabelsFormat.resx">
+      <DependentUpon>Axes_LabelsFormat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axes_Offsets.resx">
+      <DependentUpon>Axes_Offsets.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axes_ZPosition.resx">
+      <DependentUpon>Axes_ZPosition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\AxisTitle_Visible.resx">
+      <DependentUpon>AxisTitle_Visible.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_Behind.resx">
+      <DependentUpon>Axis_Behind.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_Custom.resx">
+      <DependentUpon>Axis_Custom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_DepthDateTime.resx">
+      <DependentUpon>Axis_DepthDateTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_DepthTop.resx">
+      <DependentUpon>Axis_DepthTop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_Exponent.resx">
+      <DependentUpon>Axis_Exponent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_FirstLastLabels.resx">
+      <DependentUpon>Axis_FirstLastLabels.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_GetAxisLabel.resx">
+      <DependentUpon>Axis_GetAxisLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_GridDrawEvery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Axis_GridDrawEvery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_Isometric.resx">
+      <DependentUpon>Axis_Isometric.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_Items.resx">
+      <DependentUpon>Axis_Items.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_LabelAlign.resx">
+      <DependentUpon>Axis_LabelAlign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_LabelsAlternate.resx">
+      <DependentUpon>Axis_LabelsAlternate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_MaxMinRounded.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Axis_MaxMinRounded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_Millisec.resx">
+      <DependentUpon>Axis_Millisec.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_MinorGrid.resx">
+      <DependentUpon>Axis_MinorGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_MultiScroll.resx">
+      <DependentUpon>Axis_MultiScroll.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Axis_OpaqueZone.resx">
+      <DependentUpon>Axis_OpaqueZone.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\LocalMinMax.resx">
+      <DependentUpon>LocalMinMax.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Log_CustomIncrement.resx">
+      <DependentUpon>Log_CustomIncrement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Axis\Page_AutoScale.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Page_AutoScale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Canvas_180Rotation.resx">
+      <DependentUpon>Canvas_180Rotation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Canvas_AntiAlias.resx">
+      <DependentUpon>Canvas_AntiAlias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Canvas_CustomGradients.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Canvas_CustomGradients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Canvas_DotPen.resx">
+      <DependentUpon>Canvas_DotPen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Canvas_ICloneable.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Canvas_ICloneable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Canvas_OrthoAngle.resx">
+      <DependentUpon>Canvas_OrthoAngle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Canvas_PyramidTrunc.resx">
+      <DependentUpon>Canvas_PyramidTrunc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Canvas_RotatedEllipse.resx">
+      <DependentUpon>Canvas_RotatedEllipse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Canvas_RotCenter.resx">
+      <DependentUpon>Canvas_RotCenter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Canvas_SmoothShadow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Canvas_SmoothShadow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Canvas_Transparency.resx">
+      <DependentUpon>Canvas_Transparency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Chart_OnBeforeDraw.resx">
+      <DependentUpon>Chart_OnBeforeDraw.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\CompactCharts.resx">
+      <DependentUpon>CompactCharts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\Gradient_MidColor.resx">
+      <DependentUpon>Gradient_MidColor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Canvas\RichText_Drawing.resx">
+      <DependentUpon>RichText_Drawing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ChartBook_Demo.resx">
+      <DependentUpon>ChartBook_Demo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ChartEditor_Options.resx">
+      <DependentUpon>ChartEditor_Options.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ChartGrid.resx">
+      <DependentUpon>ChartGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ChartLayout.resx">
+      <DependentUpon>ChartLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ChartListBox_Demo.resx">
+      <DependentUpon>ChartListBox_Demo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ChartListBox_Editor.resx">
+      <DependentUpon>ChartListBox_Editor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ChartListBox_Enable.resx">
+      <DependentUpon>ChartListBox_Enable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ChartListBox_Radio.resx">
+      <DependentUpon>ChartListBox_Radio.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Chart_Gallery.resx">
+      <DependentUpon>Chart_Gallery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Commander_Custom.resx">
+      <DependentUpon>Commander_Custom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Commander_Editor.resx">
+      <DependentUpon>Commander_Editor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Gallery_Panel.resx">
+      <DependentUpon>Gallery_Panel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Series_TextSource.resx">
+      <DependentUpon>Series_TextSource.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Series_XMLSource.resx">
+      <DependentUpon>Series_XMLSource.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\TeeCommander_Demo.resx">
+      <DependentUpon>TeeCommander_Demo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSource\DataConnect.resx">
+      <DependentUpon>DataConnect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSource\DatasetEditor.resx">
+      <DependentUpon>DatasetEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSource\DateTimeData.resx">
+      <DependentUpon>DateTimeData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSource\DBChart_CrossTabSource.resx">
+      <DependentUpon>DBChart_CrossTabSource.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSource\DBChart_SingleRecord.resx">
+      <DependentUpon>DBChart_SingleRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSource\DBDrillDown.resx">
+      <DependentUpon>DBDrillDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Bitmap.resx">
+      <DependentUpon>Bitmap.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Export_JScript.resx">
+      <DependentUpon>Export_JScript.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Export_Excel.resx">
+      <DependentUpon>Export_Excel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Export_GIF.resx">
+      <DependentUpon>Export_GIF.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Export_HTML.resx">
+      <DependentUpon>Export_HTML.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Export_HTML5.resx">
+      <DependentUpon>Export_HTML5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Export_JPEG.resx">
+      <DependentUpon>Export_JPEG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Export_Metafile.resx">
+      <DependentUpon>Export_Metafile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Export_ODS.resx">
+      <DependentUpon>Export_ODS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Export_PDF.resx">
+      <DependentUpon>Export_PDF.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Export_PNG.resx">
+      <DependentUpon>Export_PNG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Export_SVG.resx">
+      <DependentUpon>Export_SVG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Export_Text.resx">
+      <DependentUpon>Export_Text.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Export_VML.resx">
+      <DependentUpon>Export_VML.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Export_XML.resx">
+      <DependentUpon>Export_XML.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\PostScript_Demo.resx">
+      <DependentUpon>PostScript_Demo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\Template_Chart.resx">
+      <DependentUpon>Template_Chart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export\TIFF.resx">
+      <DependentUpon>TIFF.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\CurveFitting_Coef.resx">
+      <DependentUpon>CurveFitting_Coef.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\CurveFitting_Models.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CurveFitting_Models.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Exponential_Trend.resx">
+      <DependentUpon>Exponential_Trend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_AC.resx">
+      <DependentUpon>Function_AC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Add.resx">
+      <DependentUpon>Function_Add.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_ADX.resx">
+      <DependentUpon>Function_ADX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Alligator.resx">
+      <DependentUpon>Function_Alligator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_AO.resx">
+      <DependentUpon>Function_AO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_ATR.resx">
+      <DependentUpon>Function_ATR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Average.resx">
+      <DependentUpon>Function_Average.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Bollinger.resx">
+      <DependentUpon>Function_Bollinger.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_CCI.resx">
+      <DependentUpon>Function_CCI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_CLV.resx">
+      <DependentUpon>Function_CLV.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Compression.resx">
+      <DependentUpon>Function_Compression.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Correlation.resx">
+      <DependentUpon>Function_Correlation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Count.resx">
+      <DependentUpon>Function_Count.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_CrossPoints.resx">
+      <DependentUpon>Function_CrossPoints.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Cumulative.resx">
+      <DependentUpon>Function_Cumulative.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_CurveFitting.resx">
+      <DependentUpon>Function_CurveFitting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Custom.resx">
+      <DependentUpon>Function_Custom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Divide.resx">
+      <DependentUpon>Function_Divide.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_DownSampling.resx">
+      <DependentUpon>Function_DownSampling.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_DSamp_MMFLN_DPC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Function_DSamp_MMFLN_DPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_ExpAve.resx">
+      <DependentUpon>Function_ExpAve.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_ExpMovAve.resx">
+      <DependentUpon>Function_ExpMovAve.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Gator.resx">
+      <DependentUpon>Function_Gator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Histogram.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Function_Histogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Kurtosis.resx">
+      <DependentUpon>Function_Kurtosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Median.resx">
+      <DependentUpon>Function_Median.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Mode.resx">
+      <DependentUpon>Function_Mode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Momentum.resx">
+      <DependentUpon>Function_Momentum.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_MoneyFlow.resx">
+      <DependentUpon>Function_MoneyFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Multiply.resx">
+      <DependentUpon>Function_Multiply.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_OBV.resx">
+      <DependentUpon>Function_OBV.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_PercentChange.resx">
+      <DependentUpon>Function_PercentChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Performance.resx">
+      <DependentUpon>Function_Performance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Perimeter.resx">
+      <DependentUpon>Function_Perimeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_PVO.resx">
+      <DependentUpon>Function_PVO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_RootMeanSq.resx">
+      <DependentUpon>Function_RootMeanSq.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_RVI.resx">
+      <DependentUpon>Function_RVI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_SAR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Function_SAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Skewness.resx">
+      <DependentUpon>Function_Skewness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Slope.resx">
+      <DependentUpon>Function_Slope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_SmoothedMovingAverage.resx">
+      <DependentUpon>Function_SmoothedMovingAverage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Smoothing.resx">
+      <DependentUpon>Function_Smoothing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_SPC.resx">
+      <DependentUpon>Function_SPC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_StdDeviation.resx">
+      <DependentUpon>Function_StdDeviation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Subtract.resx">
+      <DependentUpon>Function_Subtract.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Trend.resx">
+      <DependentUpon>Function_Trend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\Function_Variance.resx">
+      <DependentUpon>Function_Variance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\MACD_Function.resx">
+      <DependentUpon>MACD_Function.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\MomentumDiv_Function.resx">
+      <DependentUpon>MomentumDiv_Function.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions\RSI_Function.resx">
+      <DependentUpon>RSI_Function.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import\Import_Text.resx">
+      <DependentUpon>Import_Text.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import\WebSource.resx">
+      <DependentUpon>WebSource.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_AddText.resx">
+      <DependentUpon>Legend_AddText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_CheckBox.resx">
+      <DependentUpon>Legend_CheckBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_CustomPos.resx">
+      <DependentUpon>Legend_CustomPos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_DrawBehind.resx">
+      <DependentUpon>Legend_DrawBehind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_FontColor.resx">
+      <DependentUpon>Legend_FontColor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_Items.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Legend_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_Multi.resx">
+      <DependentUpon>Legend_Multi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_Scroll.resx">
+      <DependentUpon>Legend_Scroll.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_Series.resx">
+      <DependentUpon>Legend_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_SymbolBorder.resx">
+      <DependentUpon>Legend_SymbolBorder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_SymbolFlags.resx">
+      <DependentUpon>Legend_SymbolFlags.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_SymbolShadow.resx">
+      <DependentUpon>Legend_SymbolShadow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_TextStyle.resx">
+      <DependentUpon>Legend_TextStyle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_Title.resx">
+      <DependentUpon>Legend_Title.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_VertSpa.resx">
+      <DependentUpon>Legend_VertSpa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Legend_Widths.resx">
+      <DependentUpon>Legend_Widths.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marks\Marks_Angle.resx">
+      <DependentUpon>Marks_Angle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marks\Marks_Callout.resx">
+      <DependentUpon>Marks_Callout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marks\Marks_DrawEvery.resx">
+      <DependentUpon>Marks_DrawEvery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marks\Marks_Multi.resx">
+      <DependentUpon>Marks_Multi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marks\Marks_NewStyles.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Marks_NewStyles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marks\Marks_PerPoint.resx">
+      <DependentUpon>Marks_PerPoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marks\Marks_Shadow.resx">
+      <DependentUpon>Marks_Shadow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marks\Marks_XYStyle.resx">
+      <DependentUpon>Marks_XYStyle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\Base.resx">
+      <DependentUpon>Base.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\BaseNoChart.resx">
+      <DependentUpon>BaseNoChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\Basic_Features.resx">
+      <DependentUpon>Basic_Features.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\Chart_Clipboard.resx">
+      <DependentUpon>Chart_Clipboard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\Chart_MultiLanguage.resx">
+      <DependentUpon>Chart_MultiLanguage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\Chart_NewLanguages.resx">
+      <DependentUpon>Chart_NewLanguages.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\Fixed_Defects_v2.resx">
+      <DependentUpon>Fixed_Defects_v2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\Order_Info.resx">
+      <DependentUpon>Order_Info.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\ShadowEditor.resx">
+      <DependentUpon>ShadowEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\Welcome_All.resx">
+      <DependentUpon>Welcome_All.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\Chart_RoundPanel.resx">
+      <DependentUpon>Chart_RoundPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\Chart_Shadow.resx">
+      <DependentUpon>Chart_Shadow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\Margins_Units.resx">
+      <DependentUpon>Margins_Units.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\Panel_ImageBevel.resx">
+      <DependentUpon>Panel_ImageBevel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Chart_PrintPreview.resx">
+      <DependentUpon>Chart_PrintPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Series\Area_Gradient.resx">
+      <DependentUpon>Area_Gradient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Area_Origin.resx">
+      <DependentUpon>Area_Origin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Area_SalesPrice.resx">
+      <DependentUpon>Area_SalesPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Area_StackGroup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Area_StackGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Area_Stairs.resx">
+      <DependentUpon>Area_Stairs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Area_Transparency.resx">
+      <DependentUpon>Area_Transparency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Area_TreatNulls.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Area_TreatNulls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\BarJoin_Series.resx">
+      <DependentUpon>BarJoin_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\BarSize.resx">
+      <DependentUpon>BarSize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Bar_3DDepth.resx">
+      <DependentUpon>Bar_3DDepth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Bar_Gradient.resx">
+      <DependentUpon>Bar_Gradient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Bar_Image.resx">
+      <DependentUpon>Bar_Image.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Bar_MarksOnBar.resx">
+      <DependentUpon>Bar_MarksOnBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Bar_SelfStack.resx">
+      <DependentUpon>Bar_SelfStack.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Bar_SideAll.resx">
+      <DependentUpon>Bar_SideAll.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Bar_StackGroup.resx">
+      <DependentUpon>Bar_StackGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Bar_TickLines.resx">
+      <DependentUpon>Bar_TickLines.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\BoxPlot_Series.resx">
+      <DependentUpon>BoxPlot_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\BoxSeries_CustomValues.resx">
+      <DependentUpon>BoxSeries_CustomValues.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Bubble_Sphere.resx">
+      <DependentUpon>Bubble_Sphere.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Bubble_Transparency.resx">
+      <DependentUpon>Bubble_Transparency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Candle_AxisLabels.resx">
+      <DependentUpon>Candle_AxisLabels.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Candle_CustomColors.resx">
+      <DependentUpon>Candle_CustomColors.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Candle_HighLowPen.resx">
+      <DependentUpon>Candle_HighLowPen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Candle_OnGetPointer.resx">
+      <DependentUpon>Candle_OnGetPointer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Canvas_Cone.resx">
+      <DependentUpon>Canvas_Cone.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Circled_Gradient.resx">
+      <DependentUpon>Circled_Gradient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\CircularGauge_ColorLines.resx">
+      <DependentUpon>CircularGauge_ColorLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\CircularGauge_DisplayAngle.resx">
+      <DependentUpon>CircularGauge_DisplayAngle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\CircularGauge_Embed.resx">
+      <DependentUpon>CircularGauge_Embed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\CircularGauge_LGauge.resx">
+      <DependentUpon>CircularGauge_LGauge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\CircularGauge_NGauge.resx">
+      <DependentUpon>CircularGauge_NGauge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\CircularGauge_Series.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CircularGauge_Series.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\ClockGauge_Series.resx">
+      <DependentUpon>ClockGauge_Series.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\ColorGrid_Bitmap.resx">
+      <DependentUpon>ColorGrid_Bitmap.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\ColorGrid_Marks.resx">
+      <DependentUpon>ColorGrid_Marks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\ColorGrid_Series.resx">
+      <DependentUpon>ColorGrid_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Contour_Filled.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Contour_Filled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Contour_Foot.resx">
+      <DependentUpon>Contour_Foot.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Contour_Frame.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Contour_Frame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Contour_Levels.resx">
+      <DependentUpon>Contour_Levels.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Contour_Palette.resx">
+      <DependentUpon>Contour_Palette.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Contour_LevelMarks.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Contour_LevelMarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Contour_Pointer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Contour_Pointer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Contour_View2D.resx">
+      <DependentUpon>Contour_View2D.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Gantt_MultipleNextTasks.resx">
+      <DependentUpon>Gantt_MultipleNextTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Master_Detail.resx">
+      <DependentUpon>Master_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_ErrorPoint3D.resx">
+      <DependentUpon>Series_ErrorPoint3D.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_ErrorPoint.resx">
+      <DependentUpon>Series_ErrorPoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\CustomPolar_GetPointerStyle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomPolar_GetPointerStyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\CustomPolar_TreatNulls.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomPolar_TreatNulls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Custom_PointerHexagon.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Custom_PointerHexagon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Darvas_Series.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Darvas_Series.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\DeltaPoint.resx">
+      <DependentUpon>DeltaPoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Donut_Series.resx">
+      <DependentUpon>Donut_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\ErrorBar_Negative.resx">
+      <DependentUpon>ErrorBar_Negative.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\FastLine_DrawAll.resx">
+      <DependentUpon>FastLine_DrawAll.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\FastLine_Nulls.resx">
+      <DependentUpon>FastLine_Nulls.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\FastLine_Realtime.resx">
+      <DependentUpon>FastLine_Realtime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\FastLine_TreatNulls.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FastLine_TreatNulls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\HighLow_Series.resx">
+      <DependentUpon>HighLow_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Histogram_Series.resx">
+      <DependentUpon>Histogram_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Histogram_Transparency.resx">
+      <DependentUpon>Histogram_Transparency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Histogram_YOrigin.resx">
+      <DependentUpon>Histogram_YOrigin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\HorizLine_Series.resx">
+      <DependentUpon>HorizLine_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\IsoSurface_Series.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IsoSurface_Series.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Kagi.resx">
+      <DependentUpon>Kagi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\KnobGauge_Series.resx">
+      <DependentUpon>KnobGauge_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\LinearGauge_Series.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LinearGauge_Series.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Line_Clickable.resx">
+      <DependentUpon>Line_Clickable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Line_ColorEachLine.resx">
+      <DependentUpon>Line_ColorEachLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Line_Interpolate.resx">
+      <DependentUpon>Line_Interpolate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Line_Outline.resx">
+      <DependentUpon>Line_Outline.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Line_Pattern.resx">
+      <DependentUpon>Line_Pattern.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Custom_Smoothed.resx">
+      <DependentUpon>Custom_Smoothed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Line_Stack.resx">
+      <DependentUpon>Line_Stack.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Line_TreatNulls.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Line_TreatNulls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Map_Series.resx">
+      <DependentUpon>Map_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Map_Transparency.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Map_Transparency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Marks_Symbols.resx">
+      <DependentUpon>Marks_Symbols.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\NumericGauge_Series.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NumericGauge_Series.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Organizational_Chart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Organizational_Chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Pie_AutoMarkPosition.resx">
+      <DependentUpon>Pie_AutoMarkPosition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Pie_Lighting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Pie_Lighting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Pie_MarksLegSize.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Pie_MarksLegSize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Pie_MarksVertCenter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Pie_MarksVertCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Pie_Multi.resx">
+      <DependentUpon>Pie_Multi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Pie_OtherLegend.resx">
+      <DependentUpon>Pie_OtherLegend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Pie_Semi.resx">
+      <DependentUpon>Pie_Semi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Pie_Shadow.resx">
+      <DependentUpon>Pie_Shadow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Pie_ShadowEllipse.resx">
+      <DependentUpon>Pie_ShadowEllipse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Pie_SliceHeights.resx">
+      <DependentUpon>Pie_SliceHeights.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Point3D_BaseLine.resx">
+      <DependentUpon>Point3D_BaseLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Point3D_Event.resx">
+      <DependentUpon>Point3D_Event.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Point3D_Nulls.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Point3D_Nulls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Point_TreatNulls.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Point_TreatNulls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\PolarRadar_Transparency.resx">
+      <DependentUpon>PolarRadar_Transparency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Polar_ClockWise.resx">
+      <DependentUpon>Polar_ClockWise.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Polar_LabelsInside.resx">
+      <DependentUpon>Polar_LabelsInside.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Polar_Nulls.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Polar_Nulls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Polar_Smooth.resx">
+      <DependentUpon>Polar_Smooth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Polar_Zones.resx">
+      <DependentUpon>Polar_Zones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Pyramid_Series.resx">
+      <DependentUpon>Pyramid_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Realtime.resx">
+      <DependentUpon>Realtime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series3D_AddArray.resx">
+      <DependentUpon>Series3D_AddArray.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Area.resx">
+      <DependentUpon>SeriesType_Area.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Arrow.resx">
+      <DependentUpon>SeriesType_Arrow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Bar.resx">
+      <DependentUpon>SeriesType_Bar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Bezier.resx">
+      <DependentUpon>SeriesType_Bezier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Bubble.resx">
+      <DependentUpon>SeriesType_Bubble.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Candle.resx">
+      <DependentUpon>SeriesType_Candle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Clock.resx">
+      <DependentUpon>SeriesType_Clock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Contour.resx">
+      <DependentUpon>SeriesType_Contour.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_FastLine.resx">
+      <DependentUpon>SeriesType_FastLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Gantt.resx">
+      <DependentUpon>SeriesType_Gantt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_HorizArea.resx">
+      <DependentUpon>SeriesType_HorizArea.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_HorizBar.resx">
+      <DependentUpon>SeriesType_HorizBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_ImagePoint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesType_ImagePoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Line.resx">
+      <DependentUpon>SeriesType_Line.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Pie.resx">
+      <DependentUpon>SeriesType_Pie.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Point.resx">
+      <DependentUpon>SeriesType_Point.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Point3D.resx">
+      <DependentUpon>SeriesType_Point3D.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Polar.resx">
+      <DependentUpon>SeriesType_Polar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Radar.resx">
+      <DependentUpon>SeriesType_Radar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Surface.resx">
+      <DependentUpon>SeriesType_Surface.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Tower.resx">
+      <DependentUpon>SeriesType_Tower.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\SeriesType_Volume.resx">
+      <DependentUpon>SeriesType_Volume.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_Bar3D.resx">
+      <DependentUpon>Series_Bar3D.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_BarNegativeStacked.resx">
+      <DependentUpon>Series_BarNegativeStacked.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_BarSize.resx">
+      <DependentUpon>Series_BarSize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_Calendar.resx">
+      <DependentUpon>Series_Calendar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_Error.resx">
+      <DependentUpon>Series_Error.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_Funnel.resx">
+      <DependentUpon>Series_Funnel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_Gauge.resx">
+      <DependentUpon>Series_Gauge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_Groups.resx">
+      <DependentUpon>Series_Groups.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_HorizHisto.resx">
+      <DependentUpon>Series_HorizHisto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_ImageBar.resx">
+      <DependentUpon>Series_ImageBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_MouseEnter.resx">
+      <DependentUpon>Series_MouseEnter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_MyPoint.resx">
+      <DependentUpon>Series_MyPoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_NullableValues.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Series_NullableValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_PointFigure.resx">
+      <DependentUpon>Series_PointFigure.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_PolarBar.resx">
+      <DependentUpon>Series_PolarBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_PolarGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Series_PolarGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_Renko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Series_Renko.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_Shape.resx">
+      <DependentUpon>Series_Shape.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_SortLabels.resx">
+      <DependentUpon>Series_SortLabels.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_TagCloud.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Series_TagCloud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Series_Vector3D.resx">
+      <DependentUpon>Series_Vector3D.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Shape_Image.resx">
+      <DependentUpon>Shape_Image.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Shape_VertAlign.resx">
+      <DependentUpon>Shape_VertAlign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Smith_Series.resx">
+      <DependentUpon>Smith_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Surface_HideCells.resx">
+      <DependentUpon>Surface_HideCells.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Surface_Irregular.resx">
+      <DependentUpon>Surface_Irregular.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Surface_Palette.resx">
+      <DependentUpon>Surface_Palette.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Surface_Sides.resx">
+      <DependentUpon>Surface_Sides.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Surface_Smoothing.resx">
+      <DependentUpon>Surface_Smoothing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Surface_Transparency.resx">
+      <DependentUpon>Surface_Transparency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Surface_WirePalette.resx">
+      <DependentUpon>Surface_WirePalette.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Surface_XYZFloat.resx">
+      <DependentUpon>Surface_XYZFloat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Ternary_Series.resx">
+      <DependentUpon>Ternary_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Tower_Clicked.resx">
+      <DependentUpon>Tower_Clicked.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Tower_Stacked.resx">
+      <DependentUpon>Tower_Stacked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\TreeMap_Series.resx">
+      <DependentUpon>TreeMap_Series.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\TriSurface_Hidding.resx">
+      <DependentUpon>TriSurface_Hidding.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\TriSurface_Series.resx">
+      <DependentUpon>TriSurface_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\VolumePipe_Series.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VolumePipe_Series.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\Volume_Origin.resx">
+      <DependentUpon>Volume_Origin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\WaterFall_Series.resx">
+      <DependentUpon>WaterFall_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\WindRose_Series.resx">
+      <DependentUpon>WindRose_Series.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\WorldMapDemo.resx">
+      <DependentUpon>WorldMapDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Series\XYZ_Gridding.resx">
+      <DependentUpon>XYZ_Gridding.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\Chart_Palettes.resx">
+      <DependentUpon>Chart_Palettes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\Chart_Themes.resx">
+      <DependentUpon>Chart_Themes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\Theme_Custom.resx">
+      <DependentUpon>Theme_Custom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Axes_GridBands.resx">
+      <DependentUpon>Axes_GridBands.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Axes_GridBandsCentered.resx">
+      <DependentUpon>Axes_GridBandsCentered.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\ColorBand_Clicked.resx">
+      <DependentUpon>ColorBand_Clicked.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\ColorBand_Drag.resx">
+      <DependentUpon>ColorBand_Drag.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\ColorBand_Transparent.resx">
+      <DependentUpon>ColorBand_Transparent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Cursor_Scope.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Cursor_Scope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\DrawLine_Style.resx">
+      <DependentUpon>DrawLine_Style.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\GanttTool.resx">
+      <DependentUpon>GanttTool.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Legend_ScrollBar.resx">
+      <DependentUpon>Legend_ScrollBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\NearestTool_Direction.resx">
+      <DependentUpon>NearestTool_Direction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Rotate_Inertia.resx">
+      <DependentUpon>Rotate_Inertia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tools_ColorBand.resx">
+      <DependentUpon>Tools_ColorBand.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tools_ColorLine.resx">
+      <DependentUpon>Tools_ColorLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tools_DrawLine.resx">
+      <DependentUpon>Tools_DrawLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tools_DrawLineDragged.resx">
+      <DependentUpon>Tools_DrawLineDragged.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tools_DrawLineEscape.resx">
+      <DependentUpon>Tools_DrawLineEscape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tools_Image.resx">
+      <DependentUpon>Tools_Image.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tools_Nearest.resx">
+      <DependentUpon>Tools_Nearest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tools_ScrollPager.resx">
+      <DependentUpon>Tools_ScrollPager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tools_SeriesAnim.resx">
+      <DependentUpon>Tools_SeriesAnim.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_3DTranspose.resx">
+      <DependentUpon>Tool_3DTranspose.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_Annotation.resx">
+      <DependentUpon>Tool_Annotation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_AnnotationAllowEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_AnnotationAllowEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_AnnotationCallout.resx">
+      <DependentUpon>Tool_AnnotationCallout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_AnnotationClick.resx">
+      <DependentUpon>Tool_AnnotationClick.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_AxisArrow.resx">
+      <DependentUpon>Tool_AxisArrow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_AxisBreaks.resx">
+      <DependentUpon>Tool_AxisBreaks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_AxisScroll.resx">
+      <DependentUpon>Tool_AxisScroll.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_BannerTool.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_BannerTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_ClipSeries.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_ClipSeries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_Cursor.resx">
+      <DependentUpon>Tool_Cursor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_CursorProg.resx">
+      <DependentUpon>Tool_CursorProg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_CursorSynchro.resx">
+      <DependentUpon>Tool_CursorSynchro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_DataTable.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_DataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_DragMarks.resx">
+      <DependentUpon>Tool_DragMarks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_DragPoint.resx">
+      <DependentUpon>Tool_DragPoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_ExtraLegend.resx">
+      <DependentUpon>Tool_ExtraLegend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_Fader.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_Fader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_Fibonacci.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_Fibonacci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_FullScreen.resx">
+      <DependentUpon>Tool_FullScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_LegendPalette.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_LegendPalette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_Lighting.resx">
+      <DependentUpon>Tool_Lighting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_Magnify.resx">
+      <DependentUpon>Tool_Magnify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_MarksTip.resx">
+      <DependentUpon>Tool_MarksTip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_Pie.resx">
+      <DependentUpon>Tool_Pie.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_Rectangle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_Rectangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_Rotate.resx">
+      <DependentUpon>Tool_Rotate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_RotateOutline.resx">
+      <DependentUpon>Tool_RotateOutline.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_RotateRotating.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_RotateRotating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_Selector.resx">
+      <DependentUpon>Tool_Selector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_SeriesBand.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_SeriesBand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_SeriesRegion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_SeriesRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_SeriesStat.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_SeriesStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_SeriesTranspose.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_SeriesTranspose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_SubChart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tool_SubChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Tool_SurfaceNearest.resx">
+      <DependentUpon>Tool_SurfaceNearest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\images\euro-coin.jpg" />
+    <EmbeddedResource Include="Walls\Wall_AutoHide.resx">
+      <DependentUpon>Wall_AutoHide.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Walls\Wall_Transparency.resx">
+      <DependentUpon>Wall_Transparency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zoom_Scroll\Zoom_Direction.resx">
+      <DependentUpon>Zoom_Direction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zoom_Scroll\Zoom_KeyShift.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Zoom_KeyShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zoom_Scroll\Zoom_MinPix.resx">
+      <DependentUpon>Zoom_MinPix.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zoom_Scroll\Zoom_Pen.resx">
+      <DependentUpon>Zoom_Pen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zoom_Scroll\Zoom_Scroll.resx">
+      <DependentUpon>Zoom_Scroll.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="DataSource\orders.xml" />
+    <Content Include="TeeChartExamples.ico" />
+    <EmbeddedResource Include="Utilities\images\point-image.bmp" />
+    <Content Include="Zoom_Scroll\App.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSource\OrdersDS.xsc">
+      <DependentUpon>OrdersDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSource\OrdersDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSource\OrdersDS.xss">
+      <DependentUpon>OrdersDS.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TechProductsLtdDataSet.xsc">
+      <DependentUpon>TechProductsLtdDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TechProductsLtdDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TechProductsLtdDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TechProductsLtdDataSet.xss">
+      <DependentUpon>TechProductsLtdDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

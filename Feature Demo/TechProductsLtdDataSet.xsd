@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TechProductsLtdDataSet" targetNamespace="http://tempuri.org/TechProductsLtdDataSet.xsd" xmlns:mstns="http://tempuri.org/TechProductsLtdDataSet.xsd" xmlns="http://tempuri.org/TechProductsLtdDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TechProductsLtdConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TechProductsLtdConnectionString (Settings)" PropertyReference="ApplicationSettings.Steema.TeeChart.Samples.Properties.Settings.GlobalReference.Default.TechProductsLtdConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="$_SalesByCountryYearTableAdapter" GeneratorDataComponentClassName="__SalesByCountryYearTableAdapter" Name="$_SalesByCountryYear" UserDataComponentName="$_SalesByCountryYearTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TechProductsLtdConnectionString (Settings)" DbObjectName="$_SalesByCountryYear" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SumOfInvoice_Value, Country_name, continent_name FROM [$_SalesByCountryYear]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SumOfInvoice_Value" DataSetColumn="SumOfInvoice_Value" />
+              <Mapping SourceColumn="Country_name" DataSetColumn="Country_name" />
+              <Mapping SourceColumn="continent_name" DataSetColumn="continent_name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="$_SalesByYearCountryTableAdapter" GeneratorDataComponentClassName="__SalesByYearCountryTableAdapter" Name="$_SalesByYearCountry" UserDataComponentName="$_SalesByYearCountryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TechProductsLtdConnectionString (Settings)" DbObjectName="$_SalesByYearCountry" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SumOfInvoice_Value, Invoice_year, Country_name FROM [$_SalesByYearCountry]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SumOfInvoice_Value" DataSetColumn="SumOfInvoice_Value" />
+              <Mapping SourceColumn="Invoice_year" DataSetColumn="Invoice_year" />
+              <Mapping SourceColumn="Country_name" DataSetColumn="Country_name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TechProductsLtdDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TechProductsLtdDataSet" msprop:Generator_UserDSName="TechProductsLtdDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="_x0024__SalesByCountryYear" msprop:Generator_TableClassName="___SalesByCountryYearDataTable" msprop:Generator_TableVarName="_table__SalesByCountryYear" msprop:Generator_TablePropName="___SalesByCountryYear" msprop:Generator_RowDeletingName="___SalesByCountryYearRowDeleting" msprop:Generator_RowChangingName="___SalesByCountryYearRowChanging" msprop:Generator_RowEvHandlerName="___SalesByCountryYearRowChangeEventHandler" msprop:Generator_RowDeletedName="___SalesByCountryYearRowDeleted" msprop:Generator_UserTableName="$_SalesByCountryYear" msprop:Generator_RowChangedName="___SalesByCountryYearRowChanged" msprop:Generator_RowEvArgName="___SalesByCountryYearRowChangeEvent" msprop:Generator_RowClassName="___SalesByCountryYearRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SumOfInvoice_Value" msprop:Generator_ColumnVarNameInTable="columnSumOfInvoice_Value" msprop:Generator_ColumnPropNameInRow="SumOfInvoice_Value" msprop:Generator_ColumnPropNameInTable="SumOfInvoice_ValueColumn" msprop:Generator_UserColumnName="SumOfInvoice_Value" type="xs:double" minOccurs="0" />
+              <xs:element name="Country_name" msprop:Generator_ColumnVarNameInTable="columnCountry_name" msprop:Generator_ColumnPropNameInRow="Country_name" msprop:Generator_ColumnPropNameInTable="Country_nameColumn" msprop:Generator_UserColumnName="Country_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="continent_name" msprop:Generator_ColumnVarNameInTable="columncontinent_name" msprop:Generator_ColumnPropNameInRow="continent_name" msprop:Generator_ColumnPropNameInTable="continent_nameColumn" msprop:Generator_UserColumnName="continent_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="_x0024__SalesByYearCountry" msprop:Generator_TableClassName="___SalesByYearCountryDataTable" msprop:Generator_TableVarName="_table__SalesByYearCountry" msprop:Generator_TablePropName="___SalesByYearCountry" msprop:Generator_RowDeletingName="___SalesByYearCountryRowDeleting" msprop:Generator_RowChangingName="___SalesByYearCountryRowChanging" msprop:Generator_RowEvHandlerName="___SalesByYearCountryRowChangeEventHandler" msprop:Generator_RowDeletedName="___SalesByYearCountryRowDeleted" msprop:Generator_UserTableName="$_SalesByYearCountry" msprop:Generator_RowChangedName="___SalesByYearCountryRowChanged" msprop:Generator_RowEvArgName="___SalesByYearCountryRowChangeEvent" msprop:Generator_RowClassName="___SalesByYearCountryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SumOfInvoice_Value" msprop:Generator_ColumnVarNameInTable="columnSumOfInvoice_Value" msprop:Generator_ColumnPropNameInRow="SumOfInvoice_Value" msprop:Generator_ColumnPropNameInTable="SumOfInvoice_ValueColumn" msprop:Generator_UserColumnName="SumOfInvoice_Value" type="xs:double" minOccurs="0" />
+              <xs:element name="Invoice_year" msprop:Generator_ColumnVarNameInTable="columnInvoice_year" msprop:Generator_ColumnPropNameInRow="Invoice_year" msprop:Generator_ColumnPropNameInTable="Invoice_yearColumn" msprop:Generator_UserColumnName="Invoice_year" type="xs:int" minOccurs="0" />
+              <xs:element name="Country_name" msprop:Generator_ColumnVarNameInTable="columnCountry_name" msprop:Generator_ColumnPropNameInRow="Country_name" msprop:Generator_ColumnPropNameInTable="Country_nameColumn" msprop:Generator_UserColumnName="Country_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
