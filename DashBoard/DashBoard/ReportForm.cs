@@ -1063,10 +1063,10 @@ namespace DashBoard
       }
 
       dashBoard.AddCell(tChart1.Name, 0, 1, 0, 2, CellType.Chart, GetChartContent(tChart1));
-      dashBoard.AddCell(tChart2.Name, 0, 1, 2, 2, CellType.Chart, GetChartContent(tChart1));
-      dashBoard.AddCell(tChart3.Name, 0, 1, 4, 2, CellType.Chart, GetChartContent(tChart1));
+      dashBoard.AddCell(tChart2.Name, 0, 1, 2, 2, CellType.Chart, GetChartContent(tChart2));
+      dashBoard.AddCell(tChart3.Name, 0, 1, 4, 2, CellType.Chart, GetChartContent(tChart3));
 
-      dashBoard.AddCell(tChart4.Name, 1, 1, 3, 3, CellType.Chart, GetChartContent(tChart1));
+      dashBoard.AddCell(tChart4.Name, 1, 1, 3, 3, CellType.Chart, GetChartContent(tChart4));
       dashBoard.AddCell(TeeGrid1.Name, 1, 1, 0, 3, CellType.Grid, GetGridContent(TeeGrid1));
 
       dashBoard.Title = "My First Title";
