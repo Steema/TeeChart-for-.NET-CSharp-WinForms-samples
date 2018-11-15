@@ -1,14 +1,21 @@
-﻿using Steema.TeeGrid.Bands;
+﻿using Steema.TeeChart;
+using Steema.TeeChart.Export;
+using Steema.TeeGrid.Bands;
+using Steema.TeeGrid.Html;
+using Steema.TeeGrid.WinForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace DashBoard
 {
@@ -992,112 +999,196 @@ namespace DashBoard
 			}
 		}
 
-private void Export_Click(object sender, EventArgs e)
-		{
-			string data = Steema.TeeGrid.JSON.JSONData.From(TeeGrid1.Grid, true, null, true);
+    private void Export_Click(object sender, EventArgs e)
+    {
+      XmlDashBoard ImportFromXML(string path)
+      {
+        XmlDashBoard dashBoard = null;
+        XmlSerializer serializer = new XmlSerializer(typeof(XmlDashBoard));
+        using (XmlTextReader reader = new XmlTextReader(path))
+        {
+          dashBoard = serializer.Deserialize(reader) as XmlDashBoard;
+        }
+        return dashBoard;
+      }
 
-			string rootpath = @"..\..\web\dashboard\data";
+      string xmlPath = @"..\..\web\dashboard\dashboard.xml";
+      ExportToXML(xmlPath);
 
-			using (System.IO.StreamWriter outputFile = new System.IO.StreamWriter(rootpath + @"\TeeGrid.JSON"))
-			{
-				outputFile.WriteLine(data);
-			}
+      XmlDashBoard dash = ImportFromXML(xmlPath);
 
-			tChart1.Export.Data.JSON.IncludeColors = false;
-			tChart2.Export.Data.JSON.IncludeColors = false;
-			tChart3.Export.Data.JSON.IncludeColors = false;
-			tChart4.Export.Data.JSON.IncludeColors = false;
+      DashExportWeb dashWeb = new DashExportWeb(dash);
+      dashWeb.Save(@"..\..\web\dashboard");
+    }
 
-			//MapChart
-			ExportMapSeries(rootpath + @"\MapChart.JSON");
-		//	tChart4.Export.Data.JSON.Save(rootpath + @"\MapChart.JSON");
-			//AreaChart
-			//tChart1.Export.Data.JSON.
-			tChart1.Export.Data.JSON.Save(rootpath + @"\AreaChart.JSON");
-			//BarChart
-			tChart2.Export.Data.JSON.Save(rootpath + @"\BarChart.JSON");
-			//DonutChart
-			tChart3.Export.Data.JSON.Save(rootpath + @"\DonutChart.JSON");
-			//Export Variables
-			ExportIndicatorsData(rootpath + @"\Variables.js");
-		}
-		private void ExportIndicatorsData(string FileName)
-		{
-			using (System.IO.StreamWriter file = new System.IO.StreamWriter(FileName, false))
-			{
-				file.WriteLine("var aTotalsales = \""+LBTotalSales.Text + "\";");
-				file.WriteLine("var aTotalitemssold = \""+ LBTotalItemsSold.Text + "\";");
-				file.WriteLine("var aTotalsalesin = \"" + LBTotalSalesCountryValue.Text+"\";");
-				file.WriteLine("var aTotalsalesinbetween = \"" + LBTotalSalesCountryBTValue.Text + "\";");
-				file.WriteLine("var aCountry = \"" + activeCountry +"\";");
-				file.WriteLine("var aStartyear = \"" + startYr.ToString()+"\";");
-				file.WriteLine("var aEndyear = \"" + endYr.ToString()+"\";");
-				file.Flush();
-				file.Close();
-			}  
+    public void ExportToXML(string path)
+    {
+      XmlDashBoard dashBoard = new XmlDashBoard();
 
-			System.Diagnostics.Process.Start(@"http://localhost/dashboard/reports/index.html");
-		}
+      string GetChartContent(TChart chart)
+      {
+        JavascriptFormat jsformat = chart.Export.Image.JScript;
+        jsformat.DoFullPage = false;
+        jsformat.CanvasName = chart.Name;
+        string result = null;
+        using (MemoryStream stream = new MemoryStream())
+        {
+          jsformat.Save(stream);
+          stream.Position = 0;
+          using (StreamReader reader = new StreamReader(stream))
+          {
+            result = reader.ReadToEnd();
+          }
+        }
 
-		private void ExportMapSeries(string FileName)
-		{
-			//Var 
-			double Zval;
-			string CountryCode, oldCountry;
-			CountryCode = "";
-			oldCountry = ".";
-			using (System.IO.StreamWriter file = new System.IO.StreamWriter(FileName, false, Encoding.ASCII))
-			{
-				file.WriteLine(" { \"" + "chart" + "\": [");
-				file.WriteLine("  {");
-				file.WriteLine("   \"" + "series" + "\":  {");
-				file.WriteLine("   \"" + "name" + "\" :" + "\"" + "MapSeries" + "\",");
-				file.WriteLine("   \"" + "color" + "\":" + "\"" + "#FFCCFFFF" + "\",");
-				file.WriteLine("   \"" + "point" + "\": [");
-			
-				for (int i = 0; i < world1.Count; ++i)
-				{
-					Zval = world1.ZValues[i];
+        result = result.Replace("cha  chart1", "chart1");
+        return result;
+      }
 
-					if (Zval != 0)
-					{
-						
-						if (oldCountry != world1.Labels[i])
-						{
-							oldCountry = world1.Labels[i];
-							for (int idx = 0; idx < CountryCodeTable.Rows.Count; ++idx)
-							{
-								if (Zval == Convert.ToDouble(CountryCodeTable.Rows[idx]["ValueSales"]))
-								{
-									CountryCode = CountryCodeTable.Rows[idx]["ID"].ToString();
-								}
-							}
+      string GetGridContent(TGrid grid)
+      {
+        HtmlExport htmlformat = grid.Export.Html;
+        string result = null;
+        using (MemoryStream stream = new MemoryStream())
+        {
+          htmlformat.Save(stream);
+          stream.Position = 0;
+          using (StreamReader reader = new StreamReader(stream))
+          {
+            result = reader.ReadToEnd();
+          }
+        }
 
-							if (first)
-							{
-								first = false;
-							}
-							else
-							{
-								file.WriteLine(",");
-							}
-							
-							file.WriteLine("     { \"" + "value" + "\":" + world1.ZValues[i].ToString() + ", \"" + "x" + "\" :0, \"" + "name" + "\":\"" + world1.Labels[i] + "\" , \"" + "id" + "\":\"" + CountryCode + "\" }");
-						}
+        return result;
+      }
 
-					}
-				}
-				file.WriteLine("   ]");
-				file.WriteLine("   }");
-				file.WriteLine("  }");
-				file.WriteLine(" ]");
-				file.WriteLine("}");
-				file.Flush();
-				file.Close();
-				first = true;
-			}
-		}
-		private void tChart2_MouseDoubleClick(object sender, MouseEventArgs e)
+      dashBoard.AddCell(tChart1.Name, 0, 1, 0, 2, CellType.Chart, GetChartContent(tChart1));
+      dashBoard.AddCell(tChart2.Name, 0, 1, 2, 2, CellType.Chart, GetChartContent(tChart1));
+      dashBoard.AddCell(tChart3.Name, 0, 1, 4, 2, CellType.Chart, GetChartContent(tChart1));
+
+      dashBoard.AddCell(tChart4.Name, 1, 1, 3, 3, CellType.Chart, GetChartContent(tChart1));
+      dashBoard.AddCell(TeeGrid1.Name, 1, 1, 0, 3, CellType.Grid, GetGridContent(TeeGrid1));
+
+      dashBoard.Title = "My First Title";
+
+      XmlSerializer serializer = new XmlSerializer(typeof(XmlDashBoard));
+      using (XmlTextWriter writer = new XmlTextWriter(path, Encoding.UTF8))
+      {
+        serializer.Serialize(writer, dashBoard);
+      }
+    }
+
+  /*
+  private void Export_Click(object sender, EventArgs e)
+  {
+    string data = Steema.TeeGrid.JSON.JSONData.From(TeeGrid1.Grid, true, null, true);
+
+    string rootpath = @"..\..\web\dashboard\data";
+
+    using (System.IO.StreamWriter outputFile = new System.IO.StreamWriter(rootpath + @"\TeeGrid.JSON"))
+    {
+      outputFile.WriteLine(data);
+    }
+
+    tChart1.Export.Data.JSON.IncludeColors = false;
+    tChart2.Export.Data.JSON.IncludeColors = false;
+    tChart3.Export.Data.JSON.IncludeColors = false;
+    tChart4.Export.Data.JSON.IncludeColors = false;
+
+    //MapChart
+    ExportMapSeries(rootpath + @"\MapChart.JSON");
+  //	tChart4.Export.Data.JSON.Save(rootpath + @"\MapChart.JSON");
+    //AreaChart
+    //tChart1.Export.Data.JSON.
+    tChart1.Export.Data.JSON.Save(rootpath + @"\AreaChart.JSON");
+    //BarChart
+    tChart2.Export.Data.JSON.Save(rootpath + @"\BarChart.JSON");
+    //DonutChart
+    tChart3.Export.Data.JSON.Save(rootpath + @"\DonutChart.JSON");
+    //Export Variables
+    ExportIndicatorsData(rootpath + @"\Variables.js");
+  }
+
+
+  private void ExportIndicatorsData(string FileName)
+  {
+    using (System.IO.StreamWriter file = new System.IO.StreamWriter(FileName, false))
+    {
+      file.WriteLine("var aTotalsales = \""+LBTotalSales.Text + "\";");
+      file.WriteLine("var aTotalitemssold = \""+ LBTotalItemsSold.Text + "\";");
+      file.WriteLine("var aTotalsalesin = \"" + LBTotalSalesCountryValue.Text+"\";");
+      file.WriteLine("var aTotalsalesinbetween = \"" + LBTotalSalesCountryBTValue.Text + "\";");
+      file.WriteLine("var aCountry = \"" + activeCountry +"\";");
+      file.WriteLine("var aStartyear = \"" + startYr.ToString()+"\";");
+      file.WriteLine("var aEndyear = \"" + endYr.ToString()+"\";");
+      file.Flush();
+      file.Close();
+    }  
+
+    System.Diagnostics.Process.Start(@"http://localhost/dashboard/reports/index.html");
+  }
+
+  private void ExportMapSeries(string FileName)
+  {
+    //Var 
+    double Zval;
+    string CountryCode, oldCountry;
+    CountryCode = "";
+    oldCountry = ".";
+    using (System.IO.StreamWriter file = new System.IO.StreamWriter(FileName, false, Encoding.ASCII))
+    {
+      file.WriteLine(" { \"" + "chart" + "\": [");
+      file.WriteLine("  {");
+      file.WriteLine("   \"" + "series" + "\":  {");
+      file.WriteLine("   \"" + "name" + "\" :" + "\"" + "MapSeries" + "\",");
+      file.WriteLine("   \"" + "color" + "\":" + "\"" + "#FFCCFFFF" + "\",");
+      file.WriteLine("   \"" + "point" + "\": [");
+
+      for (int i = 0; i < world1.Count; ++i)
+      {
+        Zval = world1.ZValues[i];
+
+        if (Zval != 0)
+        {
+
+          if (oldCountry != world1.Labels[i])
+          {
+            oldCountry = world1.Labels[i];
+            for (int idx = 0; idx < CountryCodeTable.Rows.Count; ++idx)
+            {
+              if (Zval == Convert.ToDouble(CountryCodeTable.Rows[idx]["ValueSales"]))
+              {
+                CountryCode = CountryCodeTable.Rows[idx]["ID"].ToString();
+              }
+            }
+
+            if (first)
+            {
+              first = false;
+            }
+            else
+            {
+              file.WriteLine(",");
+            }
+
+            file.WriteLine("     { \"" + "value" + "\":" + world1.ZValues[i].ToString() + ", \"" + "x" + "\" :0, \"" + "name" + "\":\"" + world1.Labels[i] + "\" , \"" + "id" + "\":\"" + CountryCode + "\" }");
+          }
+
+        }
+      }
+      file.WriteLine("   ]");
+      file.WriteLine("   }");
+      file.WriteLine("  }");
+      file.WriteLine(" ]");
+      file.WriteLine("}");
+      file.Flush();
+      file.Close();
+      first = true;
+    }
+  }
+
+  */
+  private void tChart2_MouseDoubleClick(object sender, MouseEventArgs e)
 		{
 			tChart2.ShowEditor();
 		}
@@ -1115,5 +1206,5 @@ private void Export_Click(object sender, EventArgs e)
 		{
 			tChart4.ShowEditor();
 		}
-	}
+  }
 }
