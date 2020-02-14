@@ -88,8 +88,8 @@
     <Reference Include="System.XML">
       <Name>System.XML</Name>
     </Reference>
-    <Reference Include="TeeChart, Version=4.2018.9.27, Culture=neutral, PublicKeyToken=9c8126276c77bdb7, processorArchitecture=MSIL">
-      <HintPath>packages\Steema.TeeChart.NET.4.2018.9.271\lib\net20\TeeChart.dll</HintPath>
+    <Reference Include="TeeChart, Version=4.2020.2.13, Culture=neutral, PublicKeyToken=9c8126276c77bdb7, processorArchitecture=MSIL">
+      <HintPath>packages\Steema.TeeChart.NET.4.2020.2.13\lib\net20\TeeChart.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
