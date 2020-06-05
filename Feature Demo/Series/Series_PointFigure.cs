@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
@@ -432,7 +432,6 @@ namespace Steema.TeeChart.Samples
       // 
       this.pointFigure1.Pointer.Brush.Color = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
       this.pointFigure1.Pointer.Style = Steema.TeeChart.Styles.PointerStyles.Rectangle;
-      this.pointFigure1.PointList = new Steema.TeeChart.Styles.PointFigure.PFPoint[0];
       this.pointFigure1.PricingMethod = Steema.TeeChart.Styles.PointFigure.PricingMethods.HighLow;
       this.pointFigure1.Title = "pointFigure1";
       // 
