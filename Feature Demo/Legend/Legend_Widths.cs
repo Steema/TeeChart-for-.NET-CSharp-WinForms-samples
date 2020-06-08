@@ -27,7 +27,7 @@ namespace Steema.TeeChart.Samples
 			InitializeComponent();
 			
 			this.line1.FillSampleValues(20);
-      this.tChart1.Legend.DrawBehind = false;
+      //this.tChart1.Legend.DrawBehind = false;
 
       UDSymbolGap.Value = tChart1.Legend.TextSymbolGap;
 		}
