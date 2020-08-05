@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETStandardFrameworkConsoleApp", "NETStandardFrameworkConsoleApp.csproj", "{B3CCDA3E-E901-4F7E-B2CD-309CCBAD3FA0}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeeChart.NETStandard", "..\..\..\..\..\..\TCROOT\TeeChartForNET\Version 4\Sources\TeeChart.NETStandard\TeeChart.NETStandard\TeeChart.NETStandard.csproj", "{D6DADD19-D96B-433D-8CD8-A565A758F957}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NETStandardFrameworkConsoleApp", "NETStandardFrameworkConsoleApp.csproj", "{B3CCDA3E-E901-4F7E-B2CD-309CCBAD3FA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{B3CCDA3E-E901-4F7E-B2CD-309CCBAD3FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3CCDA3E-E901-4F7E-B2CD-309CCBAD3FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3CCDA3E-E901-4F7E-B2CD-309CCBAD3FA0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D6DADD19-D96B-433D-8CD8-A565A758F957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6DADD19-D96B-433D-8CD8-A565A758F957}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6DADD19-D96B-433D-8CD8-A565A758F957}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6DADD19-D96B-433D-8CD8-A565A758F957}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
