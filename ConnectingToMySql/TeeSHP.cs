@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using Steema.TeeChart.Styles;
 using Steema.TeeChart;
@@ -451,7 +451,7 @@ namespace ConnectingToMySql
         {
             bool exists = File.Exists(fileName);
 
-            int i = fileName.IndexOf(".");
+            int i = fileName.LastIndexOf(".");
 
             if (i == -1)
                 fileName += extension;

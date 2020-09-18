@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using MySqlConnector;
 
 /// <summary>
 /// *** Project information. Please read for database connection details ***
@@ -24,22 +25,45 @@ using System.IO;
 
 namespace ConnectingToMySql
 {
-  public partial class Form2 : Form
-  {
-    public Form2()
+    public partial class Form2 : Form
     {
-      InitializeComponent();
+        public Form2()
+        {
+            InitializeComponent();
+        }
 
-      TeeSHP teeSHP = new TeeSHP();
-      odbcDataAdapter1.Fill(dataSet1);
-      teeSHP.LoadMap(map1, Path.GetFullPath(Path.GetDirectoryName(Application.ExecutablePath) + "..\\..\\..\\Maps\\world.shp"), dataSet1.Tables[0], "CNTRY_NAME", "POP_CNTRY", null, null);
+        private async void Form1_Load(object sender, EventArgs e)
+        {
+            using (var connection = new MySqlConnection("server=db154.pair.com;uid=flute_16_r;password=P2TXnnjs;database=flute_examples"))
+            {
+                await connection.OpenAsync();
 
-      this.dataGridView1.DataSource = dataSet1.Tables[0];
+                using (var command = new MySqlCommand($"SELECT * FROM `world`", connection))
+                {
+                    try
+                    {
+                        using (var adapter = new MySqlDataAdapter(command))
+                        {
+                            adapter.Fill(dataSet1);
+                        }
+                    }
+                    catch (Exception ee)
+                    {
+
+                        throw ee;
+                    }
+                }
+            }
+
+            var teeSHP = new TeeSHP();
+
+            var path = Path.GetFullPath(Path.GetDirectoryName(Application.ExecutablePath) + "..\\..\\..\\Maps\\world.shp");
+
+            teeSHP.LoadMap(map1, path, dataSet1.Tables[0], "CNTRY_NAME", "POP_CNTRY", null, null);
+
+            dataGridView1.DataSource = dataSet1.Tables[0];
+
+            tChart1[0].Marks.Visible = true;
+        }
     }
-
-    private void Form1_Load(object sender, EventArgs e)
-    {
-      tChart1[0].Marks.Visible = true;
-    }
-  }
 }
