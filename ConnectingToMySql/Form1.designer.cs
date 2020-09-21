@@ -1195,7 +1195,6 @@
             this.tChart1.Zoom.Brush.Color = System.Drawing.Color.LightBlue;
             this.tChart1.Zoom.Brush.Solid = true;
             this.tChart1.Zoom.Brush.Visible = true;
-            this.tChart1.Click += new System.EventHandler(this.tChart1_Click);
             // 
             // bar1
             // 
@@ -1397,7 +1396,6 @@
             this.chartController1.Size = new System.Drawing.Size(1182, 25);
             this.chartController1.TabIndex = 2;
             this.chartController1.Text = "chartController1";
-            this.chartController1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.chartController1_ItemClicked);
             // 
             // dataSet11
             // 

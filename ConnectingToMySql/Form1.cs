@@ -19,25 +19,10 @@ namespace ConnectingToMySql
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-            //this.odbcDataAdapter1.Fill(this.dataSet11);
-
-            // this.mySqlCommand1.
-
             this.mySqlDataAdapter1.Fill(this.dataSet11);
             this.dataGridView1.DataSource = dataSet11.Tables[0];
 
             tChart1[0].CheckDataSource();
-
-        }
-
-        private void tChart1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chartController1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
 
         }
     }
