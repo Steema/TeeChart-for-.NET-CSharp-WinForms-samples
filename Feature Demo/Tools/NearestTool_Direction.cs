@@ -442,13 +442,13 @@ namespace Steema.TeeChart.Samples
       tool1.DrawLine = false;
       tool1.Brush.Color = horizLine.Color;
       tool1.Size = 5;
-      tool1.Change += new EventHandler(tool1_Change);
+      tool1.Change += tool1_Change;
       tool2.Series = horizLine;
       tool2.Direction = NearestPointDirection.Vertical;
       tool2.DrawLine = false;
       tool2.Brush.Color = line.Color;
       tool2.Size = 5;
-      tool2.Change += new EventHandler(tool2_Change);
+      tool2.Change += tool2_Change;
 
       horizLine.FillSampleValues();
       line.FillSampleValues();

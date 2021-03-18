@@ -371,7 +371,7 @@ namespace Steema.TeeChart.Samples
       point.Size = 6;
       point.Direction = NearestPointDirection.Horizontal;
       point.Series = series;
-      point.Change += new EventHandler(point_Change);
+      point.Change += point_Change;
 
       annotate.Position = AnnotationPositions.RightTop;
       annotate.Text = "YValue:";

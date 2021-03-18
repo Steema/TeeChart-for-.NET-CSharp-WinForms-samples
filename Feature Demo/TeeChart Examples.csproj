@@ -27,7 +27,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <PublishUrl>http://localhost/TeeChartNetExamples/</PublishUrl>
     <Install>true</Install>
@@ -145,6 +145,7 @@
     <Reference Include="System.Data">
       <Name>System.Data</Name>
     </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Design">
       <Name>System.Design</Name>
     </Reference>
@@ -160,8 +161,14 @@
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
-    <Reference Include="TeeChart, Version=4.2020.5.25, Culture=neutral, PublicKeyToken=9c8126276c77bdb7, processorArchitecture=MSIL">
-      <HintPath>packages\Steema.TeeChart.NET.4.2020.5.25\lib\net20\TeeChart.dll</HintPath>
+    <Reference Include="TeeChart, Version=4.2021.3.5, Culture=neutral, PublicKeyToken=9c8126276c77bdb7, processorArchitecture=MSIL">
+      <HintPath>..\..\TeeChartPro_WinForm\packages\Steema.TeeChart.NET.4.2021.3.5\lib\net40\TeeChart.dll</HintPath>
+    </Reference>
+    <Reference Include="TeeChart.WPF, Version=4.2021.3.5, Culture=neutral, PublicKeyToken=98e8c3f289a4e286, processorArchitecture=MSIL">
+      <HintPath>..\..\TeeChartPro_WinForm\packages\Steema.TeeChart.NET.4.2021.3.5\lib\net40\TeeChart.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="TeeChart.Xaml.WPF, Version=4.2021.3.5, Culture=neutral, PublicKeyToken=9406d226170aa089, processorArchitecture=MSIL">
+      <HintPath>..\..\TeeChartPro_WinForm\packages\Steema.TeeChart.NET.4.2021.3.5\lib\net40\TeeChart.Xaml.WPF.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
