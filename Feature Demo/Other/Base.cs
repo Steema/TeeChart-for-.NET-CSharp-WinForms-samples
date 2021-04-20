@@ -23,7 +23,7 @@ namespace Steema.TeeChart.Samples
 
     public BaseForm()
     {
-      this.tChart1 = new Steema.TeeChart.TChart(false);
+      this.tChart1 = new Steema.TeeChart.TChart();
       InitializeComponent();
 
       bool old3D = tChart1.Aspect.View3D;
