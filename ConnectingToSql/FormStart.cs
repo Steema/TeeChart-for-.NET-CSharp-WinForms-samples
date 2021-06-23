@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ConnectingToSql
@@ -16,8 +9,10 @@ namespace ConnectingToSql
     {
       InitializeComponent();
 
-      LinkLabel.Link link = new LinkLabel.Link();
-      link.LinkData = "https://www.steema.com/product/net";
+      LinkLabel.Link link = new LinkLabel.Link
+      {
+        LinkData = "https://www.steema.com/product/net"
+      };
       linkLabel1.Links.Add(link);
     }
 
@@ -29,9 +24,9 @@ namespace ConnectingToSql
 
     private void button1_Click(object sender, EventArgs e)
     {
-            Form1 form = new Form1();
-            form.Show(this);
-        }
+      Form1 form = new Form1();
+      form.Show(this);
+    }
 
     private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
     {
