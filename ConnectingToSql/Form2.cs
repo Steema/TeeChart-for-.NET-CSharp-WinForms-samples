@@ -1,68 +1,56 @@
 ﻿using System;
-using System.Data.SqlClient;
-using System.IO;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Data.SqlClient;
 
-/// <summary>
-/// *** Project information. Please read for database connection details ***
-/// 
-/// The project uses a MySQL database with the following connection information:
-/// 
-///  database server=db154.pair.com
-///  Dsn=world_map
-///  uid=flute_16_r
-///  pwd=P2TXnnjs
-/// 
-///  To run this project you should set up a Windows DSN to connect to the database (via ODBC).
-/// </summary>
 
 namespace ConnectingToSql
 {
-  public partial class Form2 : Form
-  {
-    public Form2()
+    public partial class Form2 : Form
     {
-      InitializeComponent();
-    }
-
-    private async void Form1_Load(object sender, EventArgs e)
-    {
-      using (SqlConnection connection = new SqlConnection("Persist Security Info=True;Initial Catalog=master;server=qs4591.pair.com;UID=nook4_10_r;PWD=8wqALzLA"))
-      {
-        try
+        public Form2()
         {
-          await connection.OpenAsync();
-        }
-        catch (Exception)
-        {
-          throw;
+            InitializeComponent();
         }
 
-        using (SqlCommand command = new SqlCommand($"SELECT * FROM nook4_examples.world", connection))
+        private async void Form1_Load(object sender, EventArgs e)
         {
-          try
-          {
-            using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+            using (var connection = new SqlConnection("Persist Security Info=True;Initial Catalog=master;server=tcp:steema.net;UID=steema;PWD=girona2020")) 
             {
-              adapter.Fill(dataSet1);
+                await connection.OpenAsync();
+
+                using (var command = new SqlCommand($"SELECT * FROM flute_examples.world", connection))
+                {
+                    try
+                    {
+                        using (var adapter = new SqlDataAdapter(command))
+                        {
+                            adapter.Fill(dataSet1);
+                        }
+                    }
+                    catch (Exception ee)
+                    {
+                        throw ee;
+                    }
+                }
             }
-          }
-          catch (Exception ee)
-          {
-            throw ee;
-          }
+
+            var teeSHP = new TeeSHP();
+
+            var path = Path.GetFullPath(Path.GetDirectoryName(Application.ExecutablePath) + "..\\..\\..\\Maps\\world.shp");
+
+            teeSHP.LoadMap(map1, path, dataSet1.Tables[0], "CNTRY_NAME", "POP_CNTRY", null, null);
+
+            dataGridView1.DataSource = dataSet1.Tables[0];
+
+            tChart1[0].Marks.Visible = true;
         }
-      }
-
-      TeeSHP teeSHP = new TeeSHP();
-
-      string path = Path.GetFullPath(Path.GetDirectoryName(Application.ExecutablePath) + "..\\..\\..\\Maps\\world.shp");
-
-      teeSHP.LoadMap(map1, path, dataSet1.Tables[0], "CNTRY_NAME", "POP_CNTRY", null, null);
-
-      dataGridView1.DataSource = dataSet1.Tables[0];
-
-      tChart1[0].Marks.Visible = true;
     }
-  }
 }
