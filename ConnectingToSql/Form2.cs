@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.IO;
 using System.Data.SqlClient;
+using System.IO;
+using System.Windows.Forms;
 
 /// <summary>
 /// *** Project information. Please read for database connection details ***
@@ -25,44 +18,51 @@ using System.Data.SqlClient;
 
 namespace ConnectingToSql
 {
-    public partial class Form2 : Form
+  public partial class Form2 : Form
+  {
+    public Form2()
     {
-        public Form2()
-        {
-            InitializeComponent();
-        }
-
-        private async void Form1_Load(object sender, EventArgs e)
-        {
-            using (var connection = new SqlConnection("Persist Security Info=True;Initial Catalog=master;server=tcp:steema.net;UID=steema;PWD=girona2020")) 
-            {
-                await connection.OpenAsync();
-
-                using (var command = new SqlCommand($"SELECT * FROM flute_examples.world", connection))
-                {
-                    try
-                    {
-                        using (var adapter = new SqlDataAdapter(command))
-                        {
-                            adapter.Fill(dataSet1);
-                        }
-                    }
-                    catch (Exception ee)
-                    {
-                        throw ee;
-                    }
-                }
-            }
-
-            var teeSHP = new TeeSHP();
-
-            var path = Path.GetFullPath(Path.GetDirectoryName(Application.ExecutablePath) + "..\\..\\..\\Maps\\world.shp");
-
-            teeSHP.LoadMap(map1, path, dataSet1.Tables[0], "CNTRY_NAME", "POP_CNTRY", null, null);
-
-            dataGridView1.DataSource = dataSet1.Tables[0];
-
-            tChart1[0].Marks.Visible = true;
-        }
+      InitializeComponent();
     }
+
+    private async void Form1_Load(object sender, EventArgs e)
+    {
+      using (SqlConnection connection = new SqlConnection("Persist Security Info=True;Initial Catalog=master;server=qs4591.pair.com;UID=nook4_10_r;PWD=8wqALzLA"))
+      {
+        try
+        {
+          await connection.OpenAsync();
+        }
+        catch (Exception)
+        {
+          throw;
+        }
+
+        using (SqlCommand command = new SqlCommand($"SELECT * FROM nook4_examples.world", connection))
+        {
+          try
+          {
+            using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+            {
+              adapter.Fill(dataSet1);
+            }
+          }
+          catch (Exception ee)
+          {
+            throw ee;
+          }
+        }
+      }
+
+      TeeSHP teeSHP = new TeeSHP();
+
+      string path = Path.GetFullPath(Path.GetDirectoryName(Application.ExecutablePath) + "..\\..\\..\\Maps\\world.shp");
+
+      teeSHP.LoadMap(map1, path, dataSet1.Tables[0], "CNTRY_NAME", "POP_CNTRY", null, null);
+
+      dataGridView1.DataSource = dataSet1.Tables[0];
+
+      tChart1[0].Marks.Visible = true;
+    }
+  }
 }

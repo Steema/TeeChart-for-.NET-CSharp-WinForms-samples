@@ -1,17 +1,12 @@
 ﻿using System;
 using System.IO;
-using Steema.TeeChart.Styles;
-using Steema.TeeChart;
 using System.Data;
-using System.Windows;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
-using System.Drawing;
-using System.Collections;
+using Steema.TeeChart.Styles;
 
 namespace ConnectingToMySql
 {
-    public struct SHPHeader
+  public struct SHPHeader
     {
         public int FileCode;
         public int Unused1;

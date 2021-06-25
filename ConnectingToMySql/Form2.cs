@@ -34,7 +34,7 @@ namespace ConnectingToMySql
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            using (var connection = new MySqlConnection("server=db154.pair.com;uid=flute_16_r;password=P2TXnnjs;database=flute_examples"))
+            using (var connection = new MySqlConnection("server=qs4591.pair.com;uid=nook4_10_r;password=8wqALzLA;database=nook4_examples"))
             {
                 await connection.OpenAsync();
 
