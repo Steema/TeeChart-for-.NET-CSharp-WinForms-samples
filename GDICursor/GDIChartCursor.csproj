@@ -70,8 +70,11 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="TeeChart.Standard">
-      <HintPath>D:\Data\Code Examples\NET\WinApp20201125\packages\Steema.TeeChart.NET.Standard.4.2020.9.16\lib\net40\TeeChart.Standard.dll</HintPath>
+    <Reference Include="TeeChart.Business, Version=4.2021.8.23, Culture=neutral, PublicKeyToken=7d79220c74c907b6, processorArchitecture=MSIL">
+      <HintPath>packages\Steema.TeeChart.NET.Business.5.2021.8.23\lib\net40\TeeChart.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="TeeChart.Business.WPF, Version=4.2021.8.23, Culture=neutral, PublicKeyToken=7d79220c74c907b6, processorArchitecture=MSIL">
+      <HintPath>packages\Steema.TeeChart.NET.Business.5.2021.8.23\lib\net40\TeeChart.Business.WPF.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +101,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
