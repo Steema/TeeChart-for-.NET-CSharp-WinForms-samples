@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cBJoin = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tChart1
@@ -2708,11 +2709,21 @@
             this.cBJoin.UseVisualStyleBackColor = true;
             this.cBJoin.CheckedChanged += new System.EventHandler(this.cBJoin_CheckedChanged);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(494, 65);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(332, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "use the left-mousebutton over chart to show/move the vertical cursor";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(889, 723);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.cBJoin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -2734,6 +2745,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox cBJoin;
+        private System.Windows.Forms.Label label3;
     }
 }
 
